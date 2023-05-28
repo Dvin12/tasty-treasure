@@ -1,9 +1,10 @@
 import { SiCodechef } from "react-icons/si";
 import { HiOutlineUser } from "react-icons/hi2";
+
 function Navigation() {
   return (
-    <nav className=" bg-green-800 text-gray-200 xl:text-xl">
-      <div className="flex items-center justify-between mx-40 py-10">
+    <nav className=" bg-green-900 text-gray-200 xl:text-xl">
+      <div className="flex items-center justify-between mx-60 py-10">
         <section className="flex items-center">
           <SiCodechef className="text-5xl"></SiCodechef>
           <span>TastyTreasure</span>
