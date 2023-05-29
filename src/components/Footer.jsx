@@ -28,21 +28,27 @@ function Footer() {
                 Submit
               </button>
             </div>
-            <div className="grid grid-cols-3 w-full">
-              <ul>
-                Menu
+            <div className="grid grid-cols-3   my-10 text-slate-400  ">
+              <ul className="flex flex-col gap-1 ">
+                <span className="text-2xl font-medium text-gray-200 mb-3">
+                  Home
+                </span>
                 <li>Home</li>
                 <li>Recipes</li>
                 <li>About Us</li>
                 <li>Contact</li>
               </ul>
-              <ul>
-                Help
+              <ul className="justify-self-center flex flex-col gap-1">
+                <span className="text-2xl text-gray-200 mb-3 font-medium ">
+                  Help
+                </span>
                 <li>Privacy and Policy</li>
                 <li>Term of Use</li>
               </ul>
-              <ul>
-                Social
+              <ul className="justify-self-end flex flex-col gap-1">
+                <span className="text-2xl text-gray-200  mb-3 font-medium ">
+                  Social
+                </span>
                 <li>Twitter</li>
                 <li>Instagram</li>
                 <li>Youtube</li>
