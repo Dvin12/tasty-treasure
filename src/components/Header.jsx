@@ -9,8 +9,8 @@ function Header() {
             The Easiest Way To Make Your Favourite Meal
           </h1>
           <p className="text-md w-[750px] text-gray-400 font-medium my-8">
-            Discover 1000+ recipes in the palm of your hand.Find the easiest way
-            to cook with less amount of time spend.
+            Discover 1000+ recipes in the palm of your hand. Find the easiest
+            way to cook with less amount of time spend.
           </p>
           <button className="bg-green-600 px-8 py-3 rounded-xl text-lg">
             Explore Recipes

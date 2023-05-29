@@ -10,7 +10,7 @@ function Footer() {
               <span>TastyTreasure</span>
             </div>
             <p className="w-[400px] text-gray-400 my-6">
-              Discover 1000+ recipes in the palm of your hand.Find the easiest
+              Discover 1000+ recipes in the palm of your hand. Find the easiest
               way to cook with less amount of time spend.
             </p>
           </div>
