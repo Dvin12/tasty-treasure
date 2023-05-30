@@ -11,26 +11,21 @@ function Navigation() {
           <span>TastyTreasure</span>
         </section>
         <ul className="flex items-center justify-between gap-20">
-          <Link to="/">
-            <li className="cursor-pointer hover:text-green-400 duration-300">
-              Home
-            </li>
-          </Link>
-          <Link to="/recipes">
-            <li className="cursor-pointer hover:text-green-400 duration-300">
-              Recipes
-            </li>
-          </Link>
-          <Link to="/about-us">
-            <li className="cursor-pointer hover:text-green-400 duration-300">
-              About Us
-            </li>
-          </Link>
-          <Link to="/contact">
-            <li className="cursor-pointer hover:text-green-400 duration-300">
-              Contact
-            </li>
-          </Link>
+          <li className="cursor-pointer hover:text-green-400 duration-300">
+            <Link to="/">Home </Link>
+          </li>
+
+          <li className="cursor-pointer hover:text-green-400 duration-300">
+            <Link to="/recipes">Recipes </Link>
+          </li>
+
+          <li className="cursor-pointer hover:text-green-400 duration-300">
+            <Link to="/about-us">About Us </Link>
+          </li>
+
+          <li className="cursor-pointer hover:text-green-400 duration-300">
+            <Link to="/contact">Contact </Link>
+          </li>
         </ul>
         <section className="flex items-center justify-center">
           <Link to="/login">
