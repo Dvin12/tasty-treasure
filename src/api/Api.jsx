@@ -1,7 +1,20 @@
 import axios from "axios";
 
 export async function trendingData() {
-  const trending = await axios.get(`
-    https://api.spoonacular.com/recipes/random?apiKey=34c605757dc747328d796105792c4ff8&number=9`);
-  return trending;
+  const apiKey = import.meta.env.VITE_API_KEY;
+  const localStorageData = localStorage.getItem("trendingData");
+
+  if (localStorageData) {
+    return JSON.parse(localStorageData);
+  } else {
+    const response = await axios.get(
+      `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`
+    );
+
+    const trending = response.data;
+
+    localStorage.setItem("trendingData", JSON.stringify(trending));
+
+    return trending;
+  }
 }

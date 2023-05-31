@@ -6,16 +6,15 @@ import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Home() {
-  const [trendingItems, setTrendingItems] = useState([]);
+  const [trending, setTrending] = useState([]);
   const data = useLoaderData();
   useEffect(() => {
-    setTrendingItems(data.data);
+    setTrending(data.recipes);
   }, [data]);
-
   return (
     <main>
       <Header></Header>
-      <Trending trendingItems={trendingItems}></Trending>
+      <Trending trending={trending}></Trending>
       <Banner></Banner>
     </main>
   );

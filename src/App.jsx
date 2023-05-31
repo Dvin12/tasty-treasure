@@ -18,7 +18,7 @@ const Layout = () => {
   return (
     <div>
       <Navigation></Navigation>
-      <ScrollRestoration></ScrollRestoration>
+
       <Outlet></Outlet>
       <Footer></Footer>
     </div>

@@ -1,6 +1,5 @@
 import TrendingCard from "./TrendingCard";
-function Trending({ trendingItems }) {
-  console.log(trendingItems);
+function Trending({ trending }) {
   return (
     <main className="bg-gray-200 w-full h-full">
       <section className="mx-60 py-20">
@@ -17,9 +16,9 @@ function Trending({ trendingItems }) {
         </div>
       </section>
 
-      <section className="mx-60 pb-20 grid grid-cols-3 justify-items-center gap-20">
-        {trendingItems.recipes.map((items) => (
-          <TrendingCard></TrendingCard>
+      <section className="mx-60 pb-20 grid grid-cols-3 justify-items-center gap-12">
+        {trending.map((items) => (
+          <TrendingCard key={items.id} trendingItem={items} />
         ))}
       </section>
     </main>
