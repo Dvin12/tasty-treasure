@@ -9,7 +9,7 @@ function Reviews({ reviews }) {
           Community Highlights
         </h2>
         <div className="grid grid-cols-2 justify-items-center items-center my-20  gap-12">
-          {reviews.slice(0, 6).map((items) => (
+          {reviews.slice(0, 4).map((items) => (
             <ReviewCard key={items.id} reviewItem={items}></ReviewCard>
           ))}
         </div>
