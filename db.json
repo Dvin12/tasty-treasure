@@ -1,0 +1,133 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "image": "https://randomuser.me/api/portraits/men/82.jpg",
+      "name": "John Smith",
+      "recipe": "Chocolate Cake",
+      "score": 4.5,
+      "review": "I recently made this chocolate cake recipe and it turned out to be a real hit at my party! The cake was moist and rich, and the chocolate frosting was absolutely decadent. Everyone loved it and asked for seconds. The recipe was easy to follow, and I highly recommend it!"
+    },
+    {
+      "id": 2,
+      "image": "https://randomuser.me/api/portraits/women/0.jpg",
+      "name": "Emily Johnson",
+      "recipe": "Chicken Parmesan",
+      "score": 4.0,
+      "review": "I tried this chicken Parmesan recipe last night and it was fantastic! The chicken was perfectly cooked and juicy, and the tomato sauce had just the right amount of tanginess. The melted cheese on top added a great flavor. It took a bit of time to prepare, but the end result was definitely worth it."
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "image": "https://randomuser.me/api/portraits/men/76.jpg",
+      "recipe": "Spaghetti Carbonara",
+      "score": 4.8,
+      "review": "This spaghetti carbonara recipe is hands down the best I've ever tried. The combination of crispy bacon, creamy sauce, and perfectly cooked pasta is simply divine. The recipe instructions were clear, and I had no trouble making it. I highly recommend giving this recipe a try!"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Davis",
+      "image": "https://randomuser.me/api/portraits/women/27.jpg",
+      "recipe": "Banana Bread",
+      "score": 4.2,
+      "review": "I made this banana bread recipe yesterday, and it was a big hit with my family. The bread turned out moist and flavorful, with a lovely aroma filling the house. It was a breeze to make, and the bananas added a natural sweetness. I'll definitely be making this recipe again!"
+    },
+    {
+      "id": 5,
+      "name": "David Wilson",
+      "image": "https://randomuser.me/api/portraits/men/53.jpg",
+      "recipe": "Beef Stir-Fry",
+      "score": 3.5,
+      "review": "I tried this beef stir-fry recipe for dinner last week, and it was just okay. The flavors were decent, but I found the meat to be a bit tough. The vegetables were cooked well, though. Overall, it was an average dish, but I'm not sure if I'd make it again."
+    },
+    {
+      "id": 6,
+      "name": "Olivia Martinez",
+      "image": "https://randomuser.me/api/portraits/women/26.jpg",
+      "recipe": "Pumpkin Soup",
+      "score": 4.7,
+      "review": "I made this pumpkin soup recipe for a cozy fall dinner, and it was absolutely delicious! The soup had a creamy and velvety texture, with a perfect balance of spices. The recipe was straightforward, and I appreciated the helpful tips provided. It's a definite keeper!"
+    },
+    {
+      "id": 7,
+      "name": "Daniel Thompson",
+      "image": "https://randomuser.me/api/portraits/men/41.jpg",
+      "recipe": "Mushroom Risotto",
+      "score": 4.6,
+      "review": "I love mushroom risotto, and this recipe did not disappoint. The risotto turned out creamy and flavorful, and the mushrooms added a nice earthy touch. It took some patience and stirring to get the right consistency, but the end result was worth it. I'll be making this again for sure!"
+    },
+    {
+      "id": 8,
+      "name": "Sophia Lee",
+      "image": "https://randomuser.me/api/portraits/women/56.jpg",
+      "recipe": "Lemon Bars",
+      "score": 4.3,
+      "review": "I made these lemon bars for a family gathering, and they were a hit! The crust was buttery and crisp, while the lemon filling was tangy and perfectly balanced with sweetness. They were easy to make, and the recipe instructions were clear. I received many compliments, and I'll definitely be making these again."
+    },
+    {
+      "id": 9,
+      "name": "Lily Thompson",
+      "image": "https://randomuser.me/api/portraits/women/41.jpg",
+      "recipe": "Apple Pie",
+      "score": 4.6,
+      "review": "I recently made this apple pie recipe for a family gathering, and it was a huge success! The crust was flaky and golden, while the apple filling was perfectly spiced and had a nice balance of sweetness and tartness. The recipe instructions were clear and easy to follow, resulting in a pie that looked and tasted amazing. It was the perfect dessert for the occasion, and everyone loved it. I highly recommend giving this recipe a try!"
+    },
+
+    {
+      "id": 10,
+      "name": "Ava Carter",
+      "image": "https://randomuser.me/api/portraits/women/17.jpg",
+      "recipe": "Shrimp Scampi",
+      "score": 3.8,
+      "review": "I tried this shrimp scampi recipe last night, and it was okay. The garlic and lemon flavors were nice, but I found the sauce to be a bit too buttery for my taste. The shrimp cooked well and had a good texture. It was a decent dish overall, but I may modify the recipe next time."
+    },
+    {
+      "id": 11,
+      "name": "Ethan Turner",
+      "image": "https://randomuser.me/api/portraits/men/2.jpg",
+      "recipe": "Homemade Pizza",
+      "score": 4.9,
+      "review": "I absolutely loved this homemade pizza recipe! The dough was easy to work with and resulted in a perfectly crispy crust. The sauce had a great depth of flavor, and the combination of toppings was delightful. It was as good as or even better than many pizzeria pizzas I've tried. Highly recommended!"
+    },
+    {
+      "id": 12,
+      "name": "Emma Anderson",
+      "image": "https://randomuser.me/api/portraits/women/19.jpg",
+      "recipe": "Beef Chili",
+      "score": 4.1,
+      "review": "I made this beef chili recipe for a chilly winter evening, and it warmed us right up! The meat was tender, and the blend of spices gave the chili a robust flavor. It had just the right amount of heat for my taste. I served it with some cornbread, and it was a hearty and satisfying meal."
+    },
+    {
+      "id": 13,
+      "name": "Noah Walker",
+      "image": "https://randomuser.me/api/portraits/men/54.jpg",
+      "recipe": "Blueberry Muffins",
+      "score": 4.7,
+      "review": "I tried this blueberry muffin recipe for breakfast, and they were fantastic! The muffins were moist and packed with juicy blueberries. The crumb topping added a nice texture and sweetness. They were quick to make, and the recipe yielded a perfect batch. I'll be making these again soon."
+    },
+    {
+      "id": 14,
+      "name": "Isabella King",
+      "image": "https://randomuser.me/api/portraits/women/30.jpg",
+      "recipe": "Oatmeal Cookies",
+      "score": 3.9,
+      "review": "I made these oatmeal cookies for a bake sale, and they were decent. The cookies had a good texture, but I found them to be a bit too sweet for my liking. The recipe was easy to follow, and they turned out well, but I might reduce the sugar next time."
+    },
+    {
+      "id": 15,
+      "name": "Mason Wright",
+      "image": "https://randomuser.me/api/portraits/men/66.jpg",
+      "recipe": "Grilled Salmon",
+      "score": 4.5,
+      "review": "I prepared this grilled salmon recipe for a special dinner, and it was outstanding! The salmon was perfectly cooked and had a delicious smoky flavor from the grill. The marinade added a nice tanginess to the fish. It was simple to make, and the result was restaurant-quality. Highly recommended!"
+    },
+    {
+      "id": 16,
+      "name": "Avery Roberts",
+      "image": "https://randomuser.me/api/portraits/women/61.jpg",
+      "recipe": "Chocolate Chip Cookies",
+      "score": 4.4,
+      "review": "I recently tried this chocolate chip cookie recipe, and it was a hit with my family! The cookies had a perfect balance of chewiness and crispness, and the chocolate chips were gooey and melty. The recipe was easy to follow, and the cookies turned out just like bakery-quality. They disappeared within minutes! I'll definitely be making these again."
+    }
+  ]
+}
