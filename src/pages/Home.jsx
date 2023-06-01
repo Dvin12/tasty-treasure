@@ -8,16 +8,21 @@ import Reviews from "../components/Reviews";
 
 function Home() {
   const [trending, setTrending] = useState([]);
+  const [reviews, setReviews] = useState([]);
+
   const data = useLoaderData();
+
   useEffect(() => {
-    setTrending(data.recipes);
+    setTrending(data.trending.recipes);
+    setReviews(data.reviews.data);
   }, [data]);
+
   return (
     <main>
       <Header></Header>
       <Trending trending={trending}></Trending>
       <Banner></Banner>
-      <Reviews></Reviews>
+      <Reviews reviews={reviews}></Reviews>
     </main>
   );
 }

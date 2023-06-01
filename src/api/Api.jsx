@@ -18,3 +18,18 @@ export async function trendingData() {
     return trending;
   }
 }
+
+export async function reviewData() {
+  const reviews = await axios.get("http://localhost:3001/reviews");
+  return reviews;
+}
+
+export async function combinedData() {
+  const trending = await trendingData();
+  const reviews = await reviewData();
+
+  return {
+    trending,
+    reviews,
+  };
+}

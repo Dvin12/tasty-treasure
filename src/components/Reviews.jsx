@@ -1,6 +1,7 @@
 import ReviewCard from "./ReviewCard";
 
-function Reviews() {
+function Reviews({ reviews }) {
+  console.log(reviews);
   return (
     <main className="bg-gray-200">
       <section className="mx-60 py-20 ">
@@ -8,10 +9,9 @@ function Reviews() {
           Community Highlights
         </h2>
         <div className="grid grid-cols-2 justify-items-center items-center my-20  gap-12">
-          <ReviewCard></ReviewCard>
-          <ReviewCard></ReviewCard>
-          <ReviewCard></ReviewCard>
-          <ReviewCard></ReviewCard>
+          {reviews.slice(0, 6).map((items) => (
+            <ReviewCard key={items.id} reviewItem={items}></ReviewCard>
+          ))}
         </div>
       </section>
     </main>

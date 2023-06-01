@@ -12,7 +12,7 @@ import Login from "./pages/Login.jsx";
 import Favourites from "./pages/Favourites.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Footer from "./components/Footer.jsx";
-import { trendingData } from "./api/Api.jsx";
+import { combinedData } from "./api/Api.jsx";
 
 const Layout = () => {
   return (
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: trendingData,
+        loader: combinedData,
       },
 
       { path: "/recipes", element: <Recipes></Recipes> },
