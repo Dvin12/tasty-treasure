@@ -126,24 +126,6 @@
       "recipe_image": "https://www.allrecipes.com/thmb/rs48bDYw9CV2na5vcbcL65plGgQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/3779973_original-c127ae994d5d4ffd89520a7a0b737419.jpg",
       "score": 3.5,
       "review": "I made these oatmeal cookies for a bake sale, and they were decent. The cookies had a good texture, but I found them to be a bit too sweet for my liking. The recipe was easy to follow, and they turned out well, but I might reduce the sugar next time."
-    },
-    {
-      "id": 15,
-      "name": "Mason Wright",
-      "user_image": "https://randomuser.me/api/portraits/men/66.jpg",
-      "recipe": "Grilled Salmon",
-      "recipe_image": "https://www.thespruceeats.com/thmb/HgM2h42z1HGEcSWkWk5CgAjDDpQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-grill-salmon-2216658-hero-01-a9c948f8a238400ebaafc0caf509c7fa.jpg",
-      "score": 4.5,
-      "review": "I prepared this grilled salmon recipe for a special dinner, and it was outstanding! The salmon was perfectly cooked and had a delicious smoky flavor from the grill. The marinade added a nice tanginess to the fish. It was simple to make, and the result was restaurant-quality. Highly recommended!"
-    },
-    {
-      "id": 16,
-      "name": "Avery Roberts",
-      "user_image": "https://randomuser.me/api/portraits/women/61.jpg",
-      "recipe": "Chocolate Chip Cookies",
-      "recipe_image": "https://www.onceuponachef.com/images/2021/11/Best-Chocolate-Chip-Cookies-1200x1499.jpg",
-      "score": 4.5,
-      "review": "I recently tried this chocolate chip cookie recipe, and it was a hit with my family! The cookies had a perfect balance of chewiness and crispness, and the chocolate chips were gooey and melty. The recipe was easy to follow, and the cookies turned out just like bakery-quality. They disappeared within minutes! I'll definitely be making these again."
     }
   ]
 }
