@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TrendingCard from "./TrendingCard";
 function Trending({ trending }) {
   return (
@@ -12,7 +13,9 @@ function Trending({ trending }) {
               Our most popular recipes of this week
             </span>
           </div>
-          <span className="text-green-700 text-lg font-medium">See all</span>
+          <span className="text-green-700 text-xl font-medium">
+            <Link to="recipes">See all</Link>
+          </span>
         </div>
       </section>
 

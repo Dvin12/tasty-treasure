@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import { dish1, dish2 } from "../assets/img/img";
 
 function Header() {
   return (
-    <header className="bg-green-900 text-gray-100 h-full  py-40">
+    <header className="bg-emerald-900 text-gray-100 h-full  py-40">
       <section className="grid grid-cols-2 w-fit mx-60 items-center justify-center h-fit ">
         <article className="w-full">
           <h1 className="text-6xl w-[530px] font-medium  leading-normal ">
@@ -12,9 +13,11 @@ function Header() {
             Discover 1000+ recipes in the palm of your hand. Find the easiest
             way to cook with less amount of time spend.
           </p>
-          <button className="bg-green-600 px-8 py-3 rounded-xl text-lg">
-            Explore Recipes
-          </button>
+          <Link to="recipes">
+            <button className="bg-green-600 px-8 py-3 rounded-xl text-lg hover:bg-green-700 duration-300">
+              Explore Recipes
+            </button>
+          </Link>
         </article>
         <article className="   flex justify-self-center items-center relative w-[800px]">
           <img
