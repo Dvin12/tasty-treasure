@@ -3,7 +3,7 @@ import ReviewScore from "./ReviewScore";
 function ReviewCard({ reviewItem }) {
   console.log(reviewItem);
   return (
-    <article className="bg-white p-14 rounded-3xl w-full h-full">
+    <article className="bg-white p-14 rounded-3xl w-full h-full drop-shadow">
       <section className="flex flex-col">
         <div className="flex items-center">
           <img
