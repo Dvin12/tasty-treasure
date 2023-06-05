@@ -1,7 +1,7 @@
 import axios from "axios";
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export async function trendingData() {
-  const apiKey = import.meta.env.VITE_API_KEY;
   const localStorageData = localStorage.getItem("trendingData");
 
   if (localStorageData) {
@@ -16,6 +16,24 @@ export async function trendingData() {
     localStorage.setItem("trendingData", JSON.stringify(trending));
 
     return trending;
+  }
+}
+
+export async function vegetarianData() {
+  const localStorageData = localStorage.getItem("vegetarianData");
+
+  if (localStorageData) {
+    return JSON.parse(localStorageData);
+  } else {
+    const response = await axios.get(
+      `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=12&tags=vegetarian`
+    );
+
+    const vegetarian = response.data;
+
+    localStorage.setItem("vegetarianData", JSON.stringify(vegetarian));
+
+    return vegetarian;
   }
 }
 
