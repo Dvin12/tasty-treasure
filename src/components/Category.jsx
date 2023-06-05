@@ -4,7 +4,7 @@ function Category() {
   return (
     <section className="">
       <div className="flex items-center justify-center gap-12 ">
-        <div className="w-[300px]  relative flex items-center justify-center cursor-pointer overflow-hidden ">
+        <div className="w-[300px]    relative flex items-center justify-center cursor-pointer overflow-hidden ">
           <img
             src={italian}
             alt="italian"
@@ -15,7 +15,7 @@ function Category() {
           </h4>
         </div>
 
-        <div className="w-[290px]     relative flex items-center justify-center cursor-pointer overflow-hidden ">
+        <div className="max-w-[300px]     relative flex items-center justify-center cursor-pointer overflow-hidden ">
           <img
             src={american}
             alt="italian"
@@ -26,7 +26,7 @@ function Category() {
           </h4>
         </div>
 
-        <div className="w-[270px]   relative flex items-center justify-center cursor-pointer overflow-hidden">
+        <div className="w-[300px]   relative flex items-center justify-center cursor-pointer overflow-hidden">
           <img
             src={indian}
             alt="italian"
@@ -36,7 +36,7 @@ function Category() {
             Indian
           </h4>
         </div>
-        <div className="w-[290px]  relative flex items-center justify-center cursor-pointer overflow-hidden">
+        <div className="w-[300px]  relative flex items-center justify-center cursor-pointer overflow-hidden">
           <img
             src={japanese}
             alt="italian"
