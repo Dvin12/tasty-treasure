@@ -1,5 +1,4 @@
 function VegetarianCard({ vegetarianData }) {
-  console.log(vegetarianData);
   return (
     <section className="my-4  ">
       <div className="w-[300px] relative overflow-hidden  flex items-center justify-center cursor-pointer">

@@ -1,5 +1,4 @@
 function TrendingCard({ trendingItem }) {
-  console.log(trendingItem);
   return (
     <article className="w-full">
       <div className="flex flex-col gap-2 ">

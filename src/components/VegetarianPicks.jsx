@@ -4,7 +4,7 @@ import VegetarianCard from "./VegetarianCard";
 
 function VegetarianPicks({ vegetarian }) {
   return (
-    <section className="mx-60  my-20">
+    <section className="mx-60  mt-20">
       <h2 className="text-3xl font-medium px-8">
         Most Viewed Vegetarian Recipes
       </h2>
