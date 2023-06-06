@@ -12,7 +12,8 @@ import Login from "./pages/Login.jsx";
 import Favourites from "./pages/Favourites.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Footer from "./components/Footer.jsx";
-import { combinedData } from "./api/Api.jsx";
+import { picksData } from "./api/recipe-picks-api.jsx";
+import { homeData } from "./api/Home-API.jsx";
 
 const Layout = () => {
   return (
@@ -33,16 +34,20 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: combinedData,
+        loader: homeData,
       },
 
       {
         path: "/recipes/",
         element: <Recipes></Recipes>,
-        loader: combinedData,
+        loader: picksData,
       },
 
-      { path: "/recipes/:type", element: <Recipes></Recipes> },
+      {
+        path: "/recipes/:type",
+        element: <Recipes></Recipes>,
+        loader: picksData,
+      },
       {
         path: "/about-us",
         element: <AboutUs></AboutUs>,

@@ -1,7 +1,7 @@
 function DiscoverCard({ discover }) {
   return (
     <div className="my-4 ">
-      <div className="w-[300px] relative overflow-hidden  flex items-center justify-center cursor-pointer">
+      <div className="w-[300px] relative overflow-hidden  flex items-center justify-center cursor-pointer mb-12">
         <img
           src={discover.image}
           alt={discover.title}
