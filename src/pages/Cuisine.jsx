@@ -19,7 +19,7 @@ function Cuisine() {
       );
       const recipes = await data.json();
       localStorage.setItem(`${name}Recipes`, JSON.stringify(recipes.results));
-      setCuisine(recipes.results);
+      setCuisine(recipes);
     }
   };
 
@@ -28,13 +28,15 @@ function Cuisine() {
   }, [params.type]);
 
   return (
-    <div className="bg-gray-200 h-screen">
-      <Search></Search>
-      <Category></Category>
-      <div className="mx-60 p-6 my-20 grid grid-cols-4 justify-items-center gap-10">
-        {cuisine.map((item) => (
-          <CuisneCard key={item.id}></CuisneCard>
-        ))}
+    <div className="bg-gray-200 ">
+      <div>
+        <Search></Search>
+        <Category></Category>
+        <div className="mx-60 py-20 grid grid-cols-4 justify-items-center gap-10 ">
+          {cuisine.map((item) => (
+            <CuisneCard key={item.id} cuisine={item}></CuisneCard>
+          ))}
+        </div>
       </div>
     </div>
   );
