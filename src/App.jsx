@@ -14,6 +14,7 @@ import Navigation from "./components/Navigation.jsx";
 import Footer from "./components/Footer.jsx";
 import { picksData } from "./api/recipe-picks-api.jsx";
 import { homeData } from "./api/Home-API.jsx";
+import Cuisine from "./pages/Cuisine.jsx";
 
 const Layout = () => {
   return (
@@ -45,8 +46,7 @@ const router = createBrowserRouter([
 
       {
         path: "/recipes/:type",
-        element: <Recipes></Recipes>,
-        loader: picksData,
+        element: <Cuisine></Cuisine>,
       },
       {
         path: "/about-us",
