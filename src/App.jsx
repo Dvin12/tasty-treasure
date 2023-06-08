@@ -16,6 +16,7 @@ import { picksData } from "./api/recipe-picks-api.jsx";
 import { homeData } from "./api/Home-API.jsx";
 import Cuisine from "./pages/Cuisine.jsx";
 import SearchResult from "./pages/SearchResult.jsx";
+import Recipe from "./pages/Recipe.jsx";
 
 const Layout = () => {
   return (
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: homeData,
+      },
+
+      {
+        path: "/recipe/:name",
+        element: <Recipe></Recipe>,
       },
 
       {

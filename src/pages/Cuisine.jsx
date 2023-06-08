@@ -34,7 +34,9 @@ function Cuisine() {
         <Category></Category>
         <div className="mx-60 py-20 grid grid-cols-4 justify-items-center gap-10 ">
           {cuisine.map((item) => (
-            <CuisneCard key={item.id} cuisine={item}></CuisneCard>
+            <Link to={"/recipe/" + item.id}>
+              <CuisneCard key={item.id} cuisine={item}></CuisneCard>
+            </Link>
           ))}
         </div>
       </div>

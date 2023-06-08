@@ -21,7 +21,9 @@ function Trending({ trending }) {
 
       <section className="mx-60 pb-20 grid grid-cols-3 justify-items-center gap-12">
         {trending.map((items) => (
-          <TrendingCard key={items.id} trendingItem={items} />
+          <Link to={"/recipe/" + items.id}>
+            <TrendingCard key={items.id} trendingItem={items} />
+          </Link>
         ))}
       </section>
     </main>

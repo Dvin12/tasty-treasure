@@ -1,5 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import DiscoverCard from "./DiscoverCard";
+import { Link } from "react-router-dom";
 
 function Discover({ discover }) {
   return (
@@ -16,7 +17,9 @@ function Discover({ discover }) {
         >
           {discover.map((item) => (
             <SplideSlide>
-              <DiscoverCard key={item.id} discover={item}></DiscoverCard>
+              <Link to={"/recipe/" + item.id}>
+                <DiscoverCard key={item.id} discover={item}></DiscoverCard>
+              </Link>
             </SplideSlide>
           ))}
         </Splide>

@@ -1,6 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import VegetarianCard from "./VegetarianCard";
+import { Link } from "react-router-dom";
 
 function VegetarianPicks({ vegetarian }) {
   return (
@@ -20,7 +21,9 @@ function VegetarianPicks({ vegetarian }) {
         >
           {vegetarian.map((item) => (
             <SplideSlide key={item.id}>
-              <VegetarianCard vegetarianData={item}></VegetarianCard>
+              <Link to={"/recipe/" + item.id}>
+                <VegetarianCard vegetarianData={item}></VegetarianCard>
+              </Link>
             </SplideSlide>
           ))}
         </Splide>
