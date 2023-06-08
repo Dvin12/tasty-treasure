@@ -15,6 +15,7 @@ import Footer from "./components/Footer.jsx";
 import { picksData } from "./api/recipe-picks-api.jsx";
 import { homeData } from "./api/Home-API.jsx";
 import Cuisine from "./pages/Cuisine.jsx";
+import SearchResult from "./pages/SearchResult.jsx";
 
 const Layout = () => {
   return (
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path: "/recipes/",
         element: <Recipes></Recipes>,
         loader: picksData,
+      },
+
+      {
+        path: "/search/:type",
+        element: <SearchResult></SearchResult>,
       },
 
       {
