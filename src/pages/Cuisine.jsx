@@ -3,6 +3,7 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import Search from "../components/Search";
 import Category from "../components/Category";
 import CuisneCard from "../components/CuisineCard";
+import { motion } from "framer-motion";
 
 function Cuisine() {
   const [cuisine, setCuisine] = useState([]);
@@ -29,7 +30,12 @@ function Cuisine() {
 
   return (
     <div className="bg-gray-200 ">
-      <div>
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Search></Search>
         <Category></Category>
         <div className="mx-60 py-20 grid grid-cols-4 justify-items-center gap-10 ">
@@ -39,7 +45,7 @@ function Cuisine() {
             </Link>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

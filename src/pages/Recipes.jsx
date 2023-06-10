@@ -18,10 +18,17 @@ function Recipes() {
 
   return (
     <section className="bg-gray-200 ">
-      <Search></Search>
-      <Category></Category>
-      <VegetarianPicks vegetarian={vegetarian}></VegetarianPicks>
-      <Discover discover={discover}></Discover>
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.5 }}
+      >
+        <Search></Search>
+        <Category></Category>
+        <VegetarianPicks vegetarian={vegetarian}></VegetarianPicks>
+        <Discover discover={discover}></Discover>
+      </motion.div>
     </section>
   );
 }

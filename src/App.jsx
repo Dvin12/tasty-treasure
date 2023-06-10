@@ -3,6 +3,7 @@ import {
   Outlet,
   RouterProvider,
   ScrollRestoration,
+  useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Recipes from "./pages/Recipes.jsx";
@@ -17,6 +18,7 @@ import { homeData } from "./api/Home-API.jsx";
 import Cuisine from "./pages/Cuisine.jsx";
 import SearchResult from "./pages/SearchResult.jsx";
 import Recipe from "./pages/Recipe.jsx";
+import { AnimatePresence } from "framer-motion";
 
 const Layout = () => {
   return (
@@ -79,7 +81,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="font-bodyFont">
-      <RouterProvider router={router}></RouterProvider>
+      <RouterProvider location={location} router={router}></RouterProvider>
     </div>
   );
 }
