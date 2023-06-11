@@ -3,8 +3,8 @@ import { dish1, dish2 } from "../assets/img/img";
 
 function Header() {
   return (
-    <header className="bg-emerald-900 text-gray-100 h-full  py-40">
-      <section className="grid grid-cols-2 w-fit mx-60 items-center justify-center h-fit ">
+    <header className="bg-emerald-900 text-gray-100 h-screen ">
+      <section className="grid grid-cols-2 w-fit mx-60 items-center justify-center h-fit px-2   py-40">
         <article className="w-full">
           <h1 className="text-6xl w-[530px] font-medium  leading-normal ">
             The Easiest Way To Make Your Favourite Meal
@@ -28,7 +28,7 @@ function Header() {
           <img
             src={dish2}
             alt="food"
-            className=" absolute left-40 w-[640px] drop-shadow-lg z-20"
+            className=" absolute left-40 top-[-180px] w-[600px] drop-shadow-lg z-20"
           />
         </article>
       </section>

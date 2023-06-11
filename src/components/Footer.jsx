@@ -2,7 +2,7 @@ import { SiCodechef } from "react-icons/si";
 function Footer() {
   return (
     <footer className="bg-emerald-900">
-      <section className="mx-48 p-10 py-20">
+      <section className="mx-48 p-10 py-28">
         <article className="grid grid-cols-2">
           <div className="flex flex-col">
             <div className="flex text-gray-200 text-3xl">

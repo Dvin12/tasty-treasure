@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <nav className=" bg-emerald-900 text-gray-200 xl:text-xl ">
+    <nav className=" bg-emerald-900 text-gray-200 xl:text-xl sticky top-0 ">
       <div className="flex items-center justify-between mx-60 py-10 flex-shrink-0 	">
         <section>
           <Link to="/" className="flex items-center">
@@ -12,7 +12,7 @@ function Navigation() {
             <span>TastyTreasure</span>
           </Link>
         </section>
-        <ul className="gap-20  flex translate-x-[-50px]  ">
+        <ul className="gap-20  flex translate-x-[-70px]  ">
           <li className="cursor-pointer hover:text-green-400 duration-300">
             <Link to="/">Home </Link>
           </li>
