@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Recipes from "./pages/Recipes.jsx";
-import AboutUs from "./pages/About-us.jsx";
+
 import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Login.jsx";
 import Favourites from "./pages/Favourites.jsx";
@@ -62,10 +62,7 @@ const router = createBrowserRouter([
         path: "/recipes/:type",
         element: <Cuisine></Cuisine>,
       },
-      {
-        path: "/about-us",
-        element: <AboutUs></AboutUs>,
-      },
+
       {
         path: "/contact",
         element: <Contact></Contact>,

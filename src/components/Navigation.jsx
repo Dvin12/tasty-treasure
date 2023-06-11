@@ -22,10 +22,6 @@ function Navigation() {
           </li>
 
           <li className="cursor-pointer hover:text-green-400 duration-300">
-            <Link to="/about-us">About Us </Link>
-          </li>
-
-          <li className="cursor-pointer hover:text-green-400 duration-300">
             <Link to="/contact">Contact </Link>
           </li>
         </ul>

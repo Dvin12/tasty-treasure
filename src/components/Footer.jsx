@@ -35,7 +35,7 @@ function Footer() {
                 </span>
                 <li>Home</li>
                 <li>Recipes</li>
-                <li>About Us</li>
+
                 <li>Contact</li>
               </ul>
               <ul className="justify-self-center flex flex-col gap-1">
