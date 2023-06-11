@@ -23,7 +23,7 @@ function Recipe() {
   console.log(recipeDetails);
 
   return (
-    <section className="bg-gray-200 ">
+    <section className="bg-gray-200 pb-40 ">
       <motion.div
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ function Recipe() {
               alt={recipeDetails.title}
               className="rounded-2xl"
             />
-            <button className="p-4 bg-green-500 my-8 rounded-xl font-medium text-gray-100 text-lg">
+            <button className="p-4 bg-green-500 my-8 rounded-xl font-medium text-gray-100 text-lg hover:bg-green-600 duration-300">
               Add to Favourites
             </button>
             <Link to="/recipes">
@@ -46,7 +46,7 @@ function Recipe() {
             </Link>
           </div>
           <div className="bg-gray-100 p-8 rounded-2xl h-fit">
-            <h3 className="text-2xl py-4">{recipeDetails.title}</h3>
+            <h3 className="text-3xl py-4">{recipeDetails.title}</h3>
             <span
               className="text-md"
               dangerouslySetInnerHTML={{ __html: recipeDetails.summary }}
