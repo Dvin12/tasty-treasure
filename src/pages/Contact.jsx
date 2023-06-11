@@ -16,11 +16,27 @@ function Contact() {
           </p>
         </div>
 
-        <form className="flex flex-col">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Message" />
-          <button>Submit</button>
+        <form className="flex flex-col w-full ">
+          <input
+            type="text"
+            placeholder="Name"
+            className="p-2 bg-transparent border-b-2 active:border-green-600 duration-300 outline-none focus:border-green-600"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            className="p-2 bg-transparent border-b-2 active:border-green-600 duration-300 outline-none focus:border-green-600"
+          />
+          <input
+            type="text"
+            placeholder="Message"
+            className="p-2 bg-transparent border-b-2 active:border-green-600 duration-300 outline-none focus:border-green-600 h-20"
+          />
+          <div className="flex items-center justify-center mt-4">
+            <button className="bg-green-600 w-fit text-center py-2 px-4 rounded-md">
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </section>
