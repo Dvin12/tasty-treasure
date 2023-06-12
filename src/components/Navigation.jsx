@@ -31,7 +31,7 @@ function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 bg-emerald-900 text-gray-200 xl:text-xl text-sm transition-colors duration-300 z-50 ${
+      className={`fixed top-0 left-0 right-0 bg-emerald-900 text-gray-200 xl:text-xl  text-sm transition-colors duration-300 z-50 ${
         navBarTransparent ? "bg-transparent" : ""
       }`}
     >
@@ -43,7 +43,7 @@ function Navigation() {
           </Link>
         </section>
         <ul
-          className={`xl:flex xl:gap-20 xl:translate-x-[-70px] ${
+          className={`xl:flex xl:gap-20 xl:translate-x-[-60px] ${
             navOpen
               ? "flex flex-col gap-4 text-lg absolute top-full left-0 w-full bg-emerald-900 text-gray-200  transition-transform duration-300"
               : "hidden"
