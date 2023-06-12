@@ -20,8 +20,6 @@ function Recipe() {
     getRecipeDetails();
   }, [params.name]);
 
-  console.log(recipeDetails);
-
   return (
     <section className="bg-gray-200 pb-40 ">
       <motion.div
