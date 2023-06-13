@@ -17,7 +17,7 @@ function Search() {
         <input
           type="text"
           placeholder="Search for a recipe"
-          className="py-4 px-8 w-[800px] rounded-3xl outline-none"
+          className="py-4 px-8 xl:w-[800px] w-80 rounded-3xl outline-none"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />

@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 
 function Discover({ discover }) {
   return (
-    <section className="mx-60  ">
-      <h2 className="text-3xl px-8 font-medium">Discover Something New</h2>
+    <section className="xl:mx-60  ">
+      <h2 className="text-3xl px-8 text-center xl:text-left font-medium">
+        Discover Something New
+      </h2>
       <div>
         <Splide
           options={{

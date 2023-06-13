@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 function VegetarianPicks({ vegetarian }) {
   return (
-    <section className="mx-60  mt-20">
-      <h2 className="text-3xl font-medium px-8">
+    <section className="xl:mx-60  mt-20 ">
+      <h2 className="text-3xl font-medium xl:px-8 xl:text-left text-center px-4">
         Most Viewed Vegetarian Recipes
       </h2>
 

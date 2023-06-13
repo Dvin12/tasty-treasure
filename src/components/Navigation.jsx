@@ -45,7 +45,7 @@ function Navigation() {
         <ul
           className={`xl:flex xl:gap-20 xl:translate-x-[-60px] ${
             navOpen
-              ? "flex flex-col gap-4 text-lg absolute top-full left-0 w-full bg-emerald-900 text-gray-200  transition-transform duration-300"
+              ? "flex flex-col gap-4 p-4 text-lg absolute top-full left-0 w-full bg-emerald-900 text-gray-200  transition-transform duration-300"
               : "hidden"
           } md:flex`}
         >
