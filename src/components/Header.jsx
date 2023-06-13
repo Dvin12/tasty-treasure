@@ -4,7 +4,7 @@ import { dish1, dish2 } from "../assets/img/img";
 function Header() {
   return (
     <header className="bg-emerald-900 text-gray-100 h-screen ">
-      <section className="xl:grid xl:grid-cols-2 xl:w-fit xl:mx-60 items-center justify-center h-fit px-4 py-28  xl:py-80 flex flex-col relative">
+      <section className="xl:grid xl:grid-cols-2 xl:w-fit xl:mx-60 items-center justify-center h-fit px-4 py-24  xl:py-80 flex flex-col relative">
         <article className="w-full flex flex-col items-center justify-center xl:block">
           <h1 className="xl:text-6xl xl:w-[530px] font-medium  leading-normal text-4xl  text-center xl:text-left ">
             The Easiest Way To Make Your Favourite Meal
