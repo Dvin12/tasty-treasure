@@ -10,7 +10,7 @@ function ReviewSlidePhone({ reviews }) {
         arrows: false,
         autoplay: true,
         pagination: false,
-        interval: 3000,
+        interval: 9000,
         resetProgress: true,
       }}
     >
