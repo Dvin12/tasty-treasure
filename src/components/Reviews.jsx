@@ -1,45 +1,31 @@
-import ReviewCard from "./ReviewCard";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css/sea-green";
+import ReviewSlideXl from "./ReviewSlideXL";
+import ReviewSlidePhone from "./ReviewSlidePhone";
+import { useEffect, useState } from "react";
 
 function Reviews({ reviews }) {
-  console.log(reviews);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <main className="bg-gray-200">
       <section className="xl:mx-60 xl:py-20 py-4">
         <h2 className="text-center xl:text-5xl text-2xl font-semibold">
           Community Highlights
         </h2>
-        <Splide
-          options={{
-            gap: 60,
-            padding: 20,
-          }}
-        >
-          <SplideSlide>
-            <div className="xl:grid xl:grid-cols-2 xl:justify-items-center xl:items-center xl:my-20  xl:gap-12">
-              {reviews.slice(0, 4).map((items) => (
-                <ReviewCard key={items.id} reviewItem={items}></ReviewCard>
-              ))}
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="xl:grid xl:grid-cols-2 xl:justify-items-center xl:items-center xl:my-20  xl:gap-12">
-              {reviews.slice(5, 9).map((items) => (
-                <ReviewCard key={items.id} reviewItem={items}></ReviewCard>
-              ))}
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="xl:grid xl:grid-cols-2 xl:justify-items-center xl:items-center xl:my-20  xl:gap-12">
-              {reviews.slice(10, 14).map((items) => (
-                <ReviewCard key={items.id} reviewItem={items}></ReviewCard>
-              ))}
-            </div>
-          </SplideSlide>
-        </Splide>
+        {isMobile ? (
+          <ReviewSlidePhone reviews={reviews}></ReviewSlidePhone>
+        ) : (
+          <ReviewSlideXl reviews={reviews}></ReviewSlideXl>
+        )}
       </section>
     </main>
   );
