@@ -4,10 +4,10 @@ import { american, indian, japanese, italian } from "../assets/img/img";
 function Category() {
   return (
     <section className="">
-      <div className="flex items-center justify-center xl:gap-12 gap-5  flex-wrap  ">
+      <div className="flex items-center justify-center xl:gap-12 gap-4  flex-wrap ">
         <Link
           to="/recipes/Italian"
-          className="xl:w-[300px] w-[170px]    relative flex items-center justify-center cursor-pointer overflow-hidden "
+          className="xl:w-[300px] w-[160px]    relative flex items-center justify-center cursor-pointer overflow-hidden "
         >
           <img
             src={italian}
@@ -21,7 +21,7 @@ function Category() {
 
         <Link
           to="/recipes/American"
-          className="xl:w-[300px] w-[170px]     relative flex items-center justify-center cursor-pointer overflow-hidden "
+          className="xl:w-[300px] w-[160px]     relative flex items-center justify-center cursor-pointer overflow-hidden "
         >
           <img
             src={american}
@@ -35,7 +35,7 @@ function Category() {
 
         <Link
           to="/recipes/Indian"
-          className="xl:w-[300px] w-[170px]   relative flex items-center justify-center cursor-pointer overflow-hidden"
+          className="xl:w-[300px] w-[160px]   relative flex items-center justify-center cursor-pointer overflow-hidden"
         >
           <img
             src={indian}
@@ -49,7 +49,7 @@ function Category() {
 
         <Link
           to="/recipes/Japanese"
-          className="xl:w-[300px] w-[170px]   relative flex items-center justify-center cursor-pointer overflow-hidden"
+          className="xl:w-[300px] w-[160px]   relative flex items-center justify-center cursor-pointer overflow-hidden"
         >
           <img
             src={japanese}

@@ -11,7 +11,7 @@ function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 620) {
+      if (window.scrollY > 0) {
         setNavBarTransparent(false);
       } else {
         setNavBarTransparent(true);

@@ -1,31 +1,32 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import DiscoverCard from "./DiscoverCard";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import DiscoverPicks from "./DiscoverPicks";
+import DiscoverPicksPhone from "./DiscoverPicksPhone";
 
 function Discover({ discover }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="xl:mx-60  ">
       <h2 className="text-3xl px-8 text-center xl:text-left font-medium">
         Discover Something New
       </h2>
-      <div>
-        <Splide
-          options={{
-            perPage: 4,
-            padding: 20,
-            gap: 20,
-            pagination: false,
-          }}
-        >
-          {discover.map((item) => (
-            <SplideSlide>
-              <Link to={"/recipe/" + item.id}>
-                <DiscoverCard key={item.id} discover={item}></DiscoverCard>
-              </Link>
-            </SplideSlide>
-          ))}
-        </Splide>
-      </div>
+
+      {isMobile ? (
+        <DiscoverPicksPhone discover={discover}></DiscoverPicksPhone>
+      ) : (
+        <DiscoverPicks discover={discover}></DiscoverPicks>
+      )}
     </section>
   );
 }
