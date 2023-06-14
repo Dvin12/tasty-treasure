@@ -24,7 +24,9 @@ function Recipes() {
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <Search></Search>
+        <div className="pt-24">
+          <Search></Search>
+        </div>
         <Category></Category>
         <VegetarianPicks vegetarian={vegetarian}></VegetarianPicks>
         <Discover discover={discover}></Discover>

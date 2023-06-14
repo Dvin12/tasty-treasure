@@ -25,7 +25,7 @@ function Contact() {
           </ul>
         </div>
 
-        <form className="flex flex-col w-full p-4  ">
+        <form className="flex flex-col w-full p-4 xl:my-20  ">
           <input
             type="text"
             placeholder="Name"

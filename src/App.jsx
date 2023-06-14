@@ -9,7 +9,7 @@ import Home from "./pages/Home.jsx";
 import Recipes from "./pages/Recipes.jsx";
 
 import Contact from "./pages/Contact.jsx";
-import Login from "./pages/Login.jsx";
+
 import Favourites from "./pages/Favourites.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Footer from "./components/Footer.jsx";
@@ -18,7 +18,6 @@ import { homeData } from "./api/Home-API.jsx";
 import Cuisine from "./pages/Cuisine.jsx";
 import SearchResult from "./pages/SearchResult.jsx";
 import Recipe from "./pages/Recipe.jsx";
-import { AnimatePresence } from "framer-motion";
 
 const Layout = () => {
   return (
@@ -67,8 +66,6 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
-
-      { path: "/login", element: <Login></Login> },
 
       { path: "/favourites", element: <Favourites></Favourites> },
     ],

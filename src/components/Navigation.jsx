@@ -1,8 +1,8 @@
 import { SiCodechef } from "react-icons/si";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { HiOutlineUser } from "react-icons/hi2";
+import { TbChefHat } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Navigation() {
   const [navOpen, setNavOpen] = useState(false);
@@ -39,9 +39,12 @@ function Navigation() {
             <Link to="/contact">Contact </Link>
           </li>
         </ul>
-        <section className="flex items-center justify-center gap-4">
-          <Link to="/login">
-            <HiOutlineUser className="text-3xl"></HiOutlineUser>
+        <section className="flex items-center justify-center gap-4 relative">
+          <Link to="/favourites">
+            <TbChefHat className="text-4xl"></TbChefHat>
+            <div className="w-6 h-6 rounded-full absolute bottom-5 left-5 bg-white flex items-center justify-center">
+              <span className="text-black font-medium">8</span>
+            </div>
           </Link>
           <GiHamburgerMenu
             className="text-2xl cursor-pointer md:hidden"

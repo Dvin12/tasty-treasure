@@ -28,9 +28,11 @@ function Recipe() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <Search></Search>
-        <div className="xL:grid xl:grid-cols-2 xl:mx-48 xl:p-12 xl:justify-items-center xl:items-center xl:h-fit flex flex-col gap-10">
-          <div className="flex flex-col items-center justify-center order-last">
+        <div className="pt-40">
+          <Search></Search>
+        </div>
+        <div className="xl:grid xl:grid-cols-2 xl:mx-48 xl:p-12 xl:justify-items-center xl:items-center xl:h-fit flex flex-col gap-10">
+          <div className="flex flex-col items-center justify-center order-last xl:order-none">
             <img
               src={recipeDetails.image}
               alt={recipeDetails.title}
