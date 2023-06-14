@@ -7,34 +7,12 @@ import { useState, useEffect } from "react";
 function Navigation() {
   const [navOpen, setNavOpen] = useState(false);
 
-  const [navBarTransparent, setNavBarTransparent] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setNavBarTransparent(false);
-      } else {
-        setNavBarTransparent(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const handleClick = () => {
     setNavOpen(!navOpen);
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 bg-emerald-900 text-gray-200 xl:text-xl  text-sm transition-colors duration-300 z-50 ${
-        navBarTransparent ? "bg-transparent" : ""
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 bg-emerald-900 text-gray-200 xl:text-xl  text-sm transition-colors duration-300 z-50">
       <div className="flex items-center justify-between xl:mx-60 xl:py-10 flex-shrink-0 p-3 relative	">
         <section>
           <Link to="/" className="flex items-center">

@@ -29,8 +29,8 @@ function Recipe() {
         transition={{ duration: 2 }}
       >
         <Search></Search>
-        <div className="grid grid-cols-2 mx-48 p-12 justify-items-center items-center h-fit">
-          <div className="flex flex-col items-center justify-center">
+        <div className="xL:grid xl:grid-cols-2 xl:mx-48 xl:p-12 xl:justify-items-center xl:items-center xl:h-fit flex flex-col gap-10">
+          <div className="flex flex-col items-center justify-center order-last">
             <img
               src={recipeDetails.image}
               alt={recipeDetails.title}
@@ -43,14 +43,16 @@ function Recipe() {
               <button>Go Back</button>
             </Link>
           </div>
-          <div className="bg-gray-100 p-8 rounded-2xl h-fit">
-            <h3 className="text-3xl py-4">{recipeDetails.title}</h3>
+          <div className="bg-gray-100 xl:p-8 p-4 xl:rounded-2xl h-fit">
+            <h3 className="xl:text-3xl text-2xl text-center xl:text-left py-4">
+              {recipeDetails.title}
+            </h3>
             <span
-              className="text-md"
               dangerouslySetInnerHTML={{ __html: recipeDetails.summary }}
+              className="xl:text-md "
             ></span>
             <div className="p-8 border-t-2 border-b-2 my-10">
-              <ul className="grid grid-cols-3">
+              <ul className="grid xl:grid-cols-3 grid-cols-2 ">
                 {recipeDetails.extendedIngredients
                   ? recipeDetails.extendedIngredients.map((ingredient) => (
                       <li className="my-2 list-disc" key={ingredient.id}>
@@ -62,7 +64,7 @@ function Recipe() {
             </div>
             <h3 className="text-xl text-center">Instructions</h3>
             <h4
-              className="p-4 my-4"
+              className="p-4 my-4 text-justify"
               dangerouslySetInnerHTML={{ __html: recipeDetails.instructions }}
             ></h4>
           </div>

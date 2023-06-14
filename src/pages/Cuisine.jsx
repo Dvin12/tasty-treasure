@@ -38,7 +38,7 @@ function Cuisine() {
       >
         <Search></Search>
         <Category></Category>
-        <div className="mx-60 py-20 grid grid-cols-4 justify-items-center gap-10 ">
+        <div className="xl:mx-60 xl:py-20 xl:grid xl:grid-cols-4 xl:justify-items-center xl:gap-10 flex flex-col p-10 gap-10 ">
           {cuisine.map((item) => (
             <Link to={"/recipe/" + item.id}>
               <CuisneCard key={item.id} cuisine={item}></CuisneCard>
