@@ -10,7 +10,7 @@ import Recipes from "./pages/Recipes.jsx";
 
 import Contact from "./pages/Contact.jsx";
 
-import Favourites from "./pages/Favourites.jsx";
+import Saved from "./pages/Saved.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Footer from "./components/Footer.jsx";
 import { picksData } from "./api/recipe-picks-api.jsx";
@@ -23,7 +23,7 @@ const Layout = () => {
   return (
     <div>
       <Navigation></Navigation>
-
+      <ScrollRestoration></ScrollRestoration>
       <Outlet></Outlet>
       <Footer></Footer>
     </div>
@@ -67,7 +67,7 @@ const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
 
-      { path: "/favourites", element: <Favourites></Favourites> },
+      { path: "/saved", element: <Saved></Saved> },
     ],
   },
 ]);

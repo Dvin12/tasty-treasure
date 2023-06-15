@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Search from "../components/Search";
 import { useDispatch } from "react-redux";
-import { addToFavourites } from "../redux/tastySlice";
+import { addToSaved } from "../redux/tastySlice";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -41,7 +41,7 @@ function Recipe() {
       setNotification(true);
     }
     dispatch(
-      addToFavourites({
+      addToSaved({
         id: recipeDetails.id,
         title: recipeDetails.title,
         image: recipeDetails.image,

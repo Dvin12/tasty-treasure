@@ -9,7 +9,7 @@ export const tastySlice = createSlice({
   name: "tasty",
   initialState,
   reducers: {
-    addToFavourites: (state, action) => {
+    addToSaved: (state, action) => {
       const newItem = action.payload;
       const itemExists = state.recipeDetails.some(
         (item) => item.id === newItem.id
@@ -19,8 +19,16 @@ export const tastySlice = createSlice({
         state.recipeDetails.push(newItem);
       }
     },
+    removeFromSaved: (state, action) => {
+      state.recipeDetails = state.recipeDetails.filter(
+        (item) => item.id !== action.payload
+      );
+    },
+    resetSaved: (state) => {
+      state.recipeDetails = [];
+    },
   },
 });
 
-export const { addToFavourites } = tastySlice.actions;
+export const { addToSaved } = tastySlice.actions;
 export default tastySlice.reducer;

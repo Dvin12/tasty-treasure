@@ -6,8 +6,8 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 function Navigation() {
-  const favouriteData = useSelector((state) => state.tasty.recipeDetails);
-  console.log(favouriteData);
+  const savedData = useSelector((state) => state.tasty.recipeDetails);
+
   const [navOpen, setNavOpen] = useState(false);
 
   const handleClick = () => {
@@ -43,12 +43,10 @@ function Navigation() {
           </li>
         </ul>
         <section className="flex items-center justify-center gap-4 relative">
-          <Link to="/favourites">
+          <Link to="/saved">
             <TbChefHat className="text-4xl"></TbChefHat>
             <div className="w-6 h-6 rounded-full absolute bottom-5 left-5 bg-white flex items-center justify-center">
-              <span className="text-black font-medium">
-                {favouriteData.length}
-              </span>
+              <span className="text-black font-medium">{savedData.length}</span>
             </div>
           </Link>
           <GiHamburgerMenu
