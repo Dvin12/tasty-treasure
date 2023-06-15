@@ -4,9 +4,12 @@ import { motion } from "framer-motion";
 import Search from "../components/Search";
 import { useDispatch } from "react-redux";
 import { addToFavourites } from "../redux/tastySlice";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Recipe() {
   const [recipeDetails, setRecipeDetails] = useState([{}]);
+  const [notifaction, setNotification] = useState(false);
   const dispatch = useDispatch();
   let params = useParams();
   const getRecipeDetails = async () => {
@@ -22,6 +25,29 @@ function Recipe() {
   useEffect(() => {
     getRecipeDetails();
   }, [params.name]);
+
+  const handleNotification = () => {
+    if (!notifaction) {
+      toast.success("Recipe saved!", {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      setNotification(true);
+    }
+    dispatch(
+      addToFavourites({
+        id: recipeDetails.id,
+        title: recipeDetails.title,
+        image: recipeDetails.image,
+      })
+    );
+  };
 
   return (
     <section className="bg-gray-200 pb-40 ">
@@ -42,19 +68,12 @@ function Recipe() {
               className="rounded-2xl"
             />
             <button
-              onClick={() =>
-                dispatch(
-                  addToFavourites({
-                    id: recipeDetails.id,
-                    title: recipeDetails.title,
-                    image: recipeDetails.image,
-                  })
-                )
-              }
+              onClick={handleNotification}
               className="p-4 bg-green-600 my-8 rounded-xl font-medium text-gray-100 text-lg hover:bg-green-700 duration-300"
             >
               Save for later
             </button>
+
             <Link to="/recipes">
               <button>Go Back</button>
             </Link>
@@ -86,6 +105,7 @@ function Recipe() {
           </div>
         </div>
       </motion.div>
+      <ToastContainer></ToastContainer>
     </section>
   );
 }
