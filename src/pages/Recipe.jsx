@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Search from "../components/Search";
+import { useDispatch } from "react-redux";
+import { addToFavourites } from "../redux/tastySlice";
 
 function Recipe() {
   const [recipeDetails, setRecipeDetails] = useState([{}]);
+  const dispatch = useDispatch();
   let params = useParams();
   const getRecipeDetails = async () => {
     const data = await fetch(
@@ -38,8 +41,19 @@ function Recipe() {
               alt={recipeDetails.title}
               className="rounded-2xl"
             />
-            <button className="p-4 bg-green-500 my-8 rounded-xl font-medium text-gray-100 text-lg hover:bg-green-600 duration-300">
-              Add to Favourites
+            <button
+              onClick={() =>
+                dispatch(
+                  addToFavourites({
+                    id: recipeDetails.id,
+                    title: recipeDetails.title,
+                    image: recipeDetails.image,
+                  })
+                )
+              }
+              className="p-4 bg-green-600 my-8 rounded-xl font-medium text-gray-100 text-lg hover:bg-green-700 duration-300"
+            >
+              Save for later
             </button>
             <Link to="/recipes">
               <button>Go Back</button>

@@ -3,8 +3,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { TbChefHat } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 function Navigation() {
+  const favouriteData = useSelector((state) => state.tasty.recipeDetails);
+  console.log(favouriteData);
   const [navOpen, setNavOpen] = useState(false);
 
   const handleClick = () => {
@@ -43,7 +46,9 @@ function Navigation() {
           <Link to="/favourites">
             <TbChefHat className="text-4xl"></TbChefHat>
             <div className="w-6 h-6 rounded-full absolute bottom-5 left-5 bg-white flex items-center justify-center">
-              <span className="text-black font-medium">8</span>
+              <span className="text-black font-medium">
+                {favouriteData.length}
+              </span>
             </div>
           </Link>
           <GiHamburgerMenu
