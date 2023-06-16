@@ -30,5 +30,5 @@ export const tastySlice = createSlice({
   },
 });
 
-export const { addToSaved } = tastySlice.actions;
+export const { addToSaved, removeFromSaved, resetSaved } = tastySlice.actions;
 export default tastySlice.reducer;
