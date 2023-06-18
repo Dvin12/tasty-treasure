@@ -5,10 +5,10 @@ function TrendingCard({ trendingItem }) {
         <img
           src={trendingItem.image}
           alt={trendingItem.title}
-          className=" h-[360px] w-full object-fill rounded-3xl "
+          className=" h-[360px] w-full rounded-3xl object-fill "
         />
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl font-semibold w-[320px] my-4 text-gray-800">
+          <h3 className="my-4 w-[320px] text-2xl font-semibold text-gray-800 xl:w-[360px]">
             {trendingItem.title}
           </h3>
         </div>

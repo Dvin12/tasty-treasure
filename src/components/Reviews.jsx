@@ -17,8 +17,8 @@ function Reviews({ reviews }) {
   }, []);
   return (
     <main className="bg-gray-200">
-      <section className="xl:mx-60 xl:py-20 py-4">
-        <h2 className="text-center xl:text-5xl text-2xl font-semibold">
+      <section className="py-4 xl:mx-60 xl:py-28">
+        <h2 className="text-center text-2xl font-semibold xl:text-5xl">
           Community Highlights
         </h2>
         {isMobile ? (
