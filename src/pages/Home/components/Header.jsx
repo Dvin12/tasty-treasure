@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { dish1, dish2 } from "../assets/img/img";
+import { dish1, dish2 } from "../../../assets/img/img";
 
 function Header() {
   return (

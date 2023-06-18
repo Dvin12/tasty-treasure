@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams, Link } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { motion } from "framer-motion";
-import Category from "../components/Category";
-import Search from "../components/Search";
-import VegetarianPicks from "../components/VegetarianPicks";
-import Discover from "../components/Discover";
+import Category from "../../components/Category";
+import Search from "../../components/Search";
+import VegetarianPicks from "./components/VegetarianPicks";
+import Discover from "./components/Discover";
 
 function Recipes() {
   const [vegetarian, setVegetarian] = useState([]);

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Search from "../components/Search";
-import Category from "../components/Category";
-import SearchResultCard from "../components/SearchResultCard";
+import Search from "../../components/Search";
+import Category from "../../components/Category";
+import SearchResultCard from "./components/SearchResultCard";
 
 function SearchResult() {
   const [searchResult, setSearchResult] = useState([]);
@@ -26,7 +26,7 @@ function SearchResult() {
     <div className="bg-gray-200">
       <Search></Search>
       <Category></Category>
-      <div className="mx-60 py-20 grid grid-cols-4 justify-items-center gap-10 ">
+      <div className="mx-60 grid grid-cols-4 justify-items-center gap-10 py-20 ">
         {searchResult.map((item) => (
           <Link to={"/recipe/" + item.id}>
             <SearchResultCard key={item.id} results={item}></SearchResultCard>

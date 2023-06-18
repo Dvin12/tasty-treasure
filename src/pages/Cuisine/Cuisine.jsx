@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
-import Search from "../components/Search";
-import Category from "../components/Category";
-import CuisneCard from "../components/CuisineCard";
+import { Link, useParams } from "react-router-dom";
+import Search from "../../components/Search";
+import Category from "../../components/Category";
+import CuisneCard from "./components/CuisineCard";
 import { motion } from "framer-motion";
 
 function Cuisine() {
@@ -36,9 +36,11 @@ function Cuisine() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Search></Search>
+        <div className="pt-28">
+          <Search></Search>
+        </div>
         <Category></Category>
-        <div className="xl:mx-60 xl:py-20 xl:grid xl:grid-cols-4 xl:justify-items-center xl:gap-10 flex flex-col p-10 gap-10 ">
+        <div className="flex flex-col gap-10 p-10 xl:mx-60 xl:grid xl:grid-cols-4 xl:justify-items-center xl:gap-10 xl:py-20 xl:pb-28 ">
           {cuisine.map((item) => (
             <Link to={"/recipe/" + item.id}>
               <CuisneCard key={item.id} cuisine={item}></CuisneCard>

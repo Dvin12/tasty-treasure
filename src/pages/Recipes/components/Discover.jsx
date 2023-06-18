@@ -18,7 +18,7 @@ function Discover({ discover }) {
 
   return (
     <section className="xl:mx-60  ">
-      <h2 className="text-3xl px-8 text-center xl:text-left font-medium">
+      <h2 className="px-8 text-center text-3xl font-medium xl:text-left">
         Discover Something New
       </h2>
 

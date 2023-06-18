@@ -1,10 +1,10 @@
-import Header from "../components/Header";
+import Header from "./components/Header";
 
-import Trending from "../components/Trending";
-import Banner from "../components/Banner";
+import Trending from "./components/Trending";
+import Banner from "./components/Banner";
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Reviews from "../components/Reviews";
+import Reviews from "./components/Reviews";
 
 function Home() {
   const [trending, setTrending] = useState([]);

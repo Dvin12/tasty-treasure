@@ -17,8 +17,8 @@ function VegetarianPicks({ vegetarian }) {
   }, []);
 
   return (
-    <section className="xl:mx-60  mt-20 ">
-      <h2 className="text-3xl font-medium xl:px-8 xl:text-left text-center px-4">
+    <section className="mt-20  xl:mx-60 ">
+      <h2 className="px-4 text-center text-3xl font-medium xl:px-8 xl:text-left">
         Most Viewed Vegetarian Recipes
       </h2>
       {isMobile ? (

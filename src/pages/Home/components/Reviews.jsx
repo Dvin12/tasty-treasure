@@ -1,6 +1,6 @@
 import "@splidejs/splide/css/sea-green";
-import ReviewSlideXl from "./ReviewSlideXL";
-import ReviewSlidePhone from "./ReviewSlidePhone";
+import ReviewSlideXl from "../components/ReviewSlideXL";
+import ReviewSlidePhone from "../components/ReviewSlidePhone";
 import { useEffect, useState } from "react";
 
 function Reviews({ reviews }) {

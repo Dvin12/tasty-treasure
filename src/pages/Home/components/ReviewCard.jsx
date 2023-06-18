@@ -1,33 +1,33 @@
 import ReviewScore from "./ReviewScore";
 function ReviewCard({ reviewItem }) {
   return (
-    <article className="bg-white xl:p-14 p-6 rounded-3xl xl:w-full  w-fit h-full  drop-shadow">
+    <article className="h-full w-fit rounded-3xl bg-white p-6  drop-shadow xl:w-full  xl:p-14">
       <section className="flex flex-col items-center xl:items-start">
-        <div className="flex items-center flex-col xl:flex-row">
+        <div className="flex flex-col items-center xl:flex-row">
           <img
             src={reviewItem.user_image}
             alt=""
-            className="rounded-full xl:w-14 w-20"
+            className="w-20 rounded-full xl:w-14"
           />
-          <div className="flex flex-col items-center xl:items-start xl:mx-2 mt-4 xl:mt-0">
+          <div className="mt-4 flex flex-col items-center xl:mx-2 xl:mt-0 xl:items-start">
             <h3 className="text-xl font-semibold text-green-600">
               {reviewItem.recipe}
             </h3>
-            <h4 className="text-sm text-gray-500 font-medium">
+            <h4 className="text-sm font-medium text-gray-500">
               {reviewItem.name}
             </h4>
           </div>
         </div>
-        <div className=" text-green-500 xl:mt-5 mt-3 text-xl gap-1">
+        <div className=" mt-3 gap-1 text-xl text-green-500 xl:mt-5">
           <ReviewScore review={reviewItem.score}></ReviewScore>
         </div>
-        <p className="font-medium my-4 text-sm text-justify xl:text-left">
+        <p className="my-4 text-justify text-sm font-medium xl:text-left">
           {reviewItem.review}
         </p>
         <img
           src={reviewItem.recipe_image}
           alt=""
-          className="w-full object-cover h-[280px]  rounded-2xl"
+          className="h-[280px] w-full rounded-2xl  object-cover"
         />
       </section>
     </article>
