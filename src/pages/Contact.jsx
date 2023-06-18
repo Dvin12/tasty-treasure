@@ -1,5 +1,6 @@
 import { BsTwitter, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { FiMail, FiPhone } from "react-icons/fi";
+import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
     <section className="h-fit bg-gray-200">
@@ -14,52 +15,29 @@ function Contact() {
             and make your experience on our recipe website the best it can be.
           </p>
           <ul className="my-8 flex flex-col gap-4">
-            <li className="flex items-center gap-4 text-xl">
-              <FiMail className="text-2xl"></FiMail>
+            <li className="flex items-center gap-4 text-lg">
+              <FiMail className="text-xl"></FiMail>
               <span>info@tastytreasure.com</span>
             </li>
-            <li className="flex items-center gap-4 text-xl">
-              <FiPhone className="text-2xl"></FiPhone>
+            <li className="flex items-center gap-4 text-lg">
+              <FiPhone className="text-xl"></FiPhone>
               <span>575-832-3926</span>
             </li>
           </ul>
 
-          <ul className="my-8 flex items-center justify-center gap-8 text-2xl xl:my-0 xl:items-start xl:justify-start">
-            <li>
+          <ul className="my-8 flex items-center justify-center gap-4 text-xl xl:my-0 xl:items-start xl:justify-start">
+            <li className="cursor-pointer text-gray-500 duration-300 hover:text-blue-400">
               <BsTwitter></BsTwitter>
             </li>
-            <li>
+            <li className="cursor-pointer text-gray-500 duration-300 hover:text-green-600 ">
               <BsWhatsapp></BsWhatsapp>
             </li>
-            <li>
+            <li className="cursor-pointer text-gray-500 duration-300 hover:text-blue-600 ">
               <BsFacebook></BsFacebook>
             </li>
           </ul>
         </div>
-
-        <form className="flex w-full flex-col p-4 xl:my-20  ">
-          <input
-            type="text"
-            placeholder="Name"
-            className="my-4 border-b-2 border-gray-400 bg-transparent p-2 outline-none duration-300 focus:border-green-600 active:border-green-600"
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            className="my-4 border-b-2 border-gray-400 bg-transparent  p-2 outline-none duration-300 focus:border-green-600 active:border-green-600"
-          />
-          <textarea
-            rows="6"
-            cols="40"
-            placeholder="Message"
-            className="my-4 border-b-2 border-gray-400 bg-transparent  p-2 outline-none duration-300 focus:border-green-600 active:border-green-600"
-          ></textarea>
-          <div className="mt-4 flex items-center justify-center">
-            <button className="mt-6 rounded-md bg-green-700 px-12 py-4 text-center text-lg text-white duration-300 hover:bg-green-800 xl:mt-6 xl:w-fit xl:px-8 xl:py-2 xl:text-base">
-              Submit
-            </button>
-          </div>
-        </form>
+        <ContactForm></ContactForm>
       </div>
     </section>
   );

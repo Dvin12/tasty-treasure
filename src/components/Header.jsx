@@ -10,8 +10,9 @@ function Header() {
             The Easiest Way To Make Your Favourite Meal
           </h1>
           <p className="my-12 text-center font-medium text-gray-400 xl:my-10 xl:w-[660px] xl:text-left xl:text-lg">
-            Discover 1000+ recipes in the palm of your hand. Find the easiest
-            way to cook with less amount of time spend.
+            Explore a vast collection of over 1000 recipes at your fingertips.
+            Discover the quickest and easiest ways to cook, saving you valuable
+            time in the kitchen.
           </p>
           <Link to="recipes">
             <button className="order-last rounded-lg bg-green-600 px-8 py-3 text-lg duration-300 hover:bg-green-700">
