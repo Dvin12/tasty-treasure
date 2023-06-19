@@ -12,6 +12,7 @@ function ReviewSlidePhone({ reviews }) {
         pagination: false,
         interval: 9000,
         resetProgress: true,
+        width: "80rem",
       }}
     >
       {reviews.map((items) => (

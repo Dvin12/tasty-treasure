@@ -1,7 +1,7 @@
 import ReviewScore from "./ReviewScore";
 function ReviewCard({ reviewItem }) {
   return (
-    <article className="h-full w-fit rounded-3xl bg-white p-6  drop-shadow xl:w-full  xl:p-14">
+    <article className="h-full w-auto rounded-3xl bg-white p-6  drop-shadow xl:w-full  xl:p-14">
       <section className="flex flex-col items-center xl:items-start">
         <div className="flex flex-col items-center xl:flex-row">
           <img

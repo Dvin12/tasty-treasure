@@ -30,7 +30,7 @@ function RecipeFunctionality({ recipeDetails }) {
     );
   };
   return (
-    <div className="order-last flex flex-col items-center justify-center xl:order-none">
+    <div className="order-last flex flex-col items-center justify-center p-5 xl:order-none xl:p-0">
       <img
         src={recipeDetails.image}
         alt={recipeDetails.title}
@@ -38,7 +38,7 @@ function RecipeFunctionality({ recipeDetails }) {
       />
       <button
         onClick={handleNotification}
-        className="my-8 rounded-xl bg-green-600 p-4 text-lg font-medium text-gray-100 duration-300 hover:bg-green-700"
+        className="my-4 mt-12 rounded-xl bg-green-600 p-4 text-lg font-medium text-gray-100 duration-300 hover:bg-green-700 xl:my-8 xl:mt-0"
       >
         Save for later
       </button>

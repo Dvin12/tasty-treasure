@@ -9,7 +9,7 @@ function DiscoverPicksPhone({ discover }) {
         options={{
           perPage: 1,
           padding: 1,
-          gap: 20,
+          gap: 10,
           pagination: false,
           arrows: false,
           autoplay: true,

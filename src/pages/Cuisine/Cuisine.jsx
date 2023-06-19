@@ -36,11 +36,11 @@ function Cuisine() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="pt-28">
+        <div className="pt-12 xl:pt-28">
           <Search></Search>
         </div>
         <Category></Category>
-        <div className="flex flex-col gap-10 p-10 xl:mx-60 xl:grid xl:grid-cols-4 xl:justify-items-center xl:gap-10 xl:py-20 xl:pb-28 ">
+        <div className="flex w-auto flex-col items-center gap-10 py-28 xl:mx-60 xl:grid xl:grid-cols-4 xl:justify-items-center xl:gap-10 xl:p-10 xl:py-20 xl:pb-28 ">
           {cuisine.map((item) => (
             <Link to={"/recipe/" + item.id}>
               <CuisneCard key={item.id} cuisine={item}></CuisneCard>

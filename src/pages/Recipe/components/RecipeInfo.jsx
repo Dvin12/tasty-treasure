@@ -21,7 +21,7 @@ function RecipeInfo({ recipeDetails }) {
       </div>
       <h3 className="text-center text-xl">Instructions</h3>
       <h4
-        className="my-4 p-4 text-justify"
+        className="my-4 text-justify xl:p-4"
         dangerouslySetInnerHTML={{ __html: recipeDetails.instructions }}
       ></h4>
     </div>

@@ -24,12 +24,12 @@ function Header() {
           <img
             src={dish1}
             alt="food"
-            className="absolute bottom-[-120px] left-8 w-44 xl:bottom-[-120px] xl:left-0 xl:w-[420px] xl:drop-shadow-lg"
+            className=" absolute bottom-[-120px] left-8  w-48 xl:bottom-[-120px] xl:left-0 xl:w-[420px] xl:drop-shadow-lg"
           />
           <img
             src={dish2}
             alt="food"
-            className=" absolute left-28 top-[520px] z-20 w-56 drop-shadow-lg xl:left-40 xl:top-[-170px] xl:w-[580px]"
+            className=" absolute right-6 top-[550px] z-20  w-56 drop-shadow-lg xl:left-40 xl:top-[-170px] xl:w-[580px]"
           />
         </article>
       </section>

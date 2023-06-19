@@ -9,7 +9,7 @@ function VegetarianSlidePhone({ vegetarian }) {
         options={{
           perPage: 1,
           padding: 0,
-          gap: 40,
+          gap: 10,
           pagination: false,
           arrows: false,
           autoplay: true,

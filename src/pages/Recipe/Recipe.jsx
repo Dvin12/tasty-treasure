@@ -33,7 +33,7 @@ function Recipe() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <div className="pt-40">
+        <div className="pt-12 xl:pt-40">
           <Search></Search>
         </div>
         <div className="flex flex-col gap-10 xl:mx-48 xl:grid xl:h-fit xl:grid-cols-2 xl:items-center xl:justify-items-center xl:p-12">
