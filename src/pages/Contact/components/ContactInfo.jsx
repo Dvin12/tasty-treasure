@@ -6,12 +6,12 @@ function ContactInfo() {
       <h4 className="text-center text-3xl xl:text-left">
         We would love to hear from you!{" "}
       </h4>
-      <p className="my-5 p-8 text-justify xl:p-0 xl:text-left">
+      <p className="my-5 p-4 text-justify xl:p-0 xl:text-left">
         Whether you have a question, feedback, or simply want to say hello,
         please don't hesitate to reach out. Our team is here to assist you and
         make your experience on our recipe website the best it can be.
       </p>
-      <ul className="my-8 flex flex-col gap-4">
+      <ul className="my-8 flex flex-col items-center justify-center gap-4 xl:items-start xl:justify-start">
         <li className="flex items-center gap-4 text-lg">
           <FiMail className="text-xl"></FiMail>
           <span>info@tastytreasure.com</span>

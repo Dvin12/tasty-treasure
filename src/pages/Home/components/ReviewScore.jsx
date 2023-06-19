@@ -1,8 +1,5 @@
-import { useState } from "react";
-import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+import { BsStarFill, BsStar } from "react-icons/bs";
 function ReviewScore({ review }) {
-  console.log(review);
-
   if (review === 1) {
     return (
       <div className="flex gap-1">
