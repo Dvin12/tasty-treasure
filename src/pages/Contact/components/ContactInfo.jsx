@@ -22,7 +22,7 @@ function ContactInfo() {
         </li>
       </ul>
 
-      <ul className="my-8 flex items-center justify-center gap-4 text-xl xl:my-0 xl:items-start xl:justify-start">
+      <ul className="my-8 flex items-center justify-center gap-6 text-2xl xl:my-0 xl:items-start xl:justify-start xl:gap-4 xl:text-xl">
         <li className="cursor-pointer text-gray-500 duration-300 hover:text-blue-400">
           <BsTwitter></BsTwitter>
         </li>
