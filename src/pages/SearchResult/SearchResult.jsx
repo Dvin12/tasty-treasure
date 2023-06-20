@@ -24,9 +24,11 @@ function SearchResult() {
 
   return (
     <div className="bg-gray-200">
-      <Search></Search>
+      <div className="md:pt-20">
+        <Search></Search>
+      </div>
       <Category></Category>
-      <div className="mx-60 grid grid-cols-4 justify-items-center gap-10 py-20 ">
+      <div className="justify-items-center gap-10 py-20 md:grid md:grid-cols-2 xl:mx-60 xl:grid-cols-4 ">
         {searchResult.map((item) => (
           <Link to={"/recipe/" + item.id}>
             <SearchResultCard key={item.id} results={item}></SearchResultCard>

@@ -7,7 +7,7 @@ function Category() {
       <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6  xl:gap-12 ">
         <Link
           to="/recipes/Italian"
-          className="relative flex    w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[260px] xl:w-[300px] "
+          className="relative flex    w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[290px] xl:w-[300px] "
         >
           <img
             src={italian}
@@ -21,7 +21,7 @@ function Category() {
 
         <Link
           to="/recipes/American"
-          className="relative flex     w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[260px] xl:w-[300px] "
+          className="relative flex     w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[290px] xl:w-[300px] "
         >
           <img
             src={american}
@@ -35,7 +35,7 @@ function Category() {
 
         <Link
           to="/recipes/Indian"
-          className="relative flex   w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[260px]  xl:w-[300px]"
+          className="relative flex   w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[290px]  xl:w-[300px]"
         >
           <img
             src={indian}
@@ -49,7 +49,7 @@ function Category() {
 
         <Link
           to="/recipes/Japanese"
-          className="relative flex   w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[260px]  xl:w-[300px]"
+          className="relative flex   w-[160px] cursor-pointer items-center justify-center overflow-hidden md:w-[290px]  xl:w-[300px]"
         >
           <img
             src={japanese}

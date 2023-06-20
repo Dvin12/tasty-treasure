@@ -1,6 +1,6 @@
 function RecipeInfo({ recipeDetails }) {
   return (
-    <div className="h-fit bg-gray-100 p-4 xl:rounded-2xl xl:p-8">
+    <div className="h-fit bg-gray-100 p-4 md:p-6 xl:rounded-2xl xl:p-8">
       <h3 className="py-4 text-center text-2xl xl:text-left xl:text-3xl">
         {recipeDetails.title}
       </h3>
@@ -9,7 +9,7 @@ function RecipeInfo({ recipeDetails }) {
         className="xl:text-md "
       ></span>
       <div className="my-10 border-b-2 border-t-2 p-8">
-        <ul className="grid grid-cols-2 xl:grid-cols-3 ">
+        <ul className="grid grid-cols-2 md:justify-items-center xl:grid-cols-3 xl:justify-items-start ">
           {recipeDetails.extendedIngredients
             ? recipeDetails.extendedIngredients.map((ingredient) => (
                 <li className="my-2 list-disc" key={ingredient.id}>
