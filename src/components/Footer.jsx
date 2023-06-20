@@ -10,7 +10,7 @@ function Footer() {
               <SiCodechef className="text-4xl"></SiCodechef>
               <span>TastyTreasure</span>
             </div>
-            <p className="my-4 p-2 text-justify text-gray-400 xl:w-[400px] xl:p-0 xl:text-left">
+            <p className="my-4 p-2 text-justify text-gray-400 md:text-center xl:w-[400px] xl:p-0 xl:text-left">
               Explore a vast collection of over 1000 recipes at your fingertips.
               Discover the quickest and easiest ways to cook, saving you
               valuable time in the kitchen.
@@ -26,12 +26,12 @@ function Footer() {
                 placeholder="Your email address"
                 className="w-full border-b-[3px] border-gray-500 bg-transparent py-4 text-white  outline-none"
               />
-              <button className="absolute right-0 rounded-lg bg-green-600 px-2 py-2 text-sm text-gray-200 duration-300 hover:bg-green-700 xl:px-6 xl:text-base">
+              <button className="absolute right-0 rounded-lg bg-green-600 px-2 py-2 text-sm text-gray-200 duration-300 hover:bg-green-700 md:px-6 md:py-3 md:text-base">
                 Submit
               </button>
             </div>
             <div className="my-14 grid   grid-cols-3 text-slate-400 xl:my-10  ">
-              <ul className="flex flex-col gap-1 xl:w-[300px] ">
+              <ul className="flex flex-col gap-1 md:w-[300px] ">
                 <span className="mb-3 text-2xl font-medium text-gray-200">
                   Home
                 </span>

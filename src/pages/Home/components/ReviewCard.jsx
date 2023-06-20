@@ -1,13 +1,13 @@
 import ReviewScore from "./ReviewScore";
 function ReviewCard({ reviewItem }) {
   return (
-    <article className="h-full w-auto rounded-3xl bg-white p-6  drop-shadow xl:w-full  xl:p-14">
+    <article className="h-full w-auto rounded-3xl bg-white p-6 drop-shadow  md:p-12 xl:w-full  xl:p-14">
       <section className="flex flex-col items-center xl:items-start">
         <div className="flex flex-col items-center xl:flex-row">
           <img
             src={reviewItem.user_image}
             alt=""
-            className="w-20 rounded-full xl:w-14"
+            className="w-20 rounded-full md:w-28 xl:w-14"
           />
           <div className="mt-4 flex flex-col items-center xl:mx-2 xl:mt-0 xl:items-start">
             <h3 className="text-xl font-semibold text-green-600">

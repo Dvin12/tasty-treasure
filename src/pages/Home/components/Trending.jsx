@@ -6,14 +6,14 @@ function Trending({ trending }) {
       <section className=" pt-14 xl:mx-60 xl:px-2 xl:py-20">
         <div className="flex flex-col items-center  xl:flex-row xl:justify-between">
           <div className="flex flex-col items-center justify-center xl:block">
-            <h2 className="mb-2 text-center text-2xl font-semibold text-gray-900 xl:text-left xl:text-4xl">
+            <h2 className="mb-2 text-center text-2xl font-semibold text-gray-900 md:text-4xl xl:text-left ">
               Current Trending Recipes
             </h2>
-            <span className="text-center text-sm  font-medium text-gray-500 xl:text-lg">
+            <span className="text-center text-sm  font-medium text-gray-500 md:text-lg ">
               Our most popular recipes of this week
             </span>
           </div>
-          <span className="py-6 text-xl font-medium text-green-700 xl:py-0 ">
+          <span className="py-6 text-xl font-medium text-green-700 md:text-2xl xl:py-0 xl:text-xl ">
             <Link to="recipes">See all</Link>
           </span>
         </div>

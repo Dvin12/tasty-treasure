@@ -7,7 +7,7 @@ function Reviews({ reviews }) {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 640);
+      setIsMobile(window.innerWidth <= 1024);
     };
     handleResize();
 
@@ -17,8 +17,8 @@ function Reviews({ reviews }) {
   }, []);
   return (
     <main className="bg-gray-200">
-      <section className="py-12 xl:mx-60 xl:py-28 ">
-        <h2 className="text-center text-3xl font-semibold xl:text-5xl">
+      <section className="py-12  xl:mx-60 xl:py-28 ">
+        <h2 className="text-center text-3xl font-semibold md:text-4xl xl:text-5xl">
           Community Highlights
         </h2>
         {isMobile ? (

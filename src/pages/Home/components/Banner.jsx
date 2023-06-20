@@ -6,13 +6,15 @@ function Banner() {
       <img
         src={banner}
         alt=""
-        className="  w-full  object-cover  brightness-75 xl:h-[560px] "
+        className="  w-full  object-cover  brightness-75 md:h-[460px] xl:h-[560px] "
       />
-      <article className="flex flex-col items-start justify-center bg-gray-200 p-16 text-center xl:absolute xl:right-40 xl:top-48 xl:rounded-xl  xl:p-12">
-        <h3 className="text-3xl font-medium">50+ Breakfast Recipes</h3>
-        <span className="my-4 text-lg text-gray-600 xl:my-2">
-          Find the perfect food recipes to start your day tasty.
-        </span>
+      <article className="flex flex-col items-start justify-center bg-gray-200 p-16 text-center md:absolute md:right-28 md:top-32 md:rounded-xl md:p-12 xl:right-40  xl:top-48">
+        <div className="my-4 xl:text-left">
+          <h3 className="text-3xl font-medium ">50+ Breakfast Recipes</h3>
+          <span className="my-4 text-lg text-gray-600 xl:my-2">
+            Find the perfect food recipes to start your day tasty.
+          </span>
+        </div>
       </article>
     </section>
   );
