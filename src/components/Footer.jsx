@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className=" bg-emerald-900">
-      <section className="p-4 py-14 xl:mx-4 xl:p-0 xl:py-28 2xl:mx-60">
+      <section className="p-4 py-14 xl:mx-8 xl:p-0 xl:py-28 2xl:mx-60">
         <article className="flex flex-col items-center justify-center xl:grid xl:grid-cols-2 xl:items-start">
           <div className="my-4 flex flex-col items-center xl:items-start">
             <div className="flex text-3xl text-gray-200">

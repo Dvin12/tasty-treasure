@@ -16,7 +16,7 @@ function Navigation() {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 bg-emerald-900 text-sm  text-gray-200 transition-colors duration-300 ">
-      <div className="relative flex flex-shrink-0 items-center justify-between p-3 md:p-6 xl:mx-6 xl:p-0 2xl:mx-60 2xl:py-10	">
+      <div className="relative flex flex-shrink-0 items-center justify-between p-3 md:p-6  xl:p-8 2xl:mx-60 2xl:p-0 2xl:py-10	">
         <section>
           <Link to="/" className="flex items-center">
             <SiCodechef className="text-4xl"></SiCodechef>

@@ -24,7 +24,9 @@ export async function trendingData() {
 ////// REVIEWS FETCH /////////
 
 export async function reviewData() {
-  const reviews = await axios.get("http://localhost:3001/reviews");
+  const reviews = await axios.get(
+    "https://my-json-server.typicode.com/dvin12/tasty-treasure/reviews"
+  );
   return reviews;
 }
 

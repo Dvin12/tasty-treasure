@@ -8,11 +8,11 @@ function RecipeInfo({ recipeDetails }) {
         dangerouslySetInnerHTML={{ __html: recipeDetails.summary }}
         className="xl:text-md "
       ></span>
-      <div className="my-10 border-b-2 border-t-2 p-8">
+      <div className="my-10 border-b-2 border-t-2 p-4">
         <ul className="grid grid-cols-2 md:justify-items-center xl:grid-cols-3 xl:justify-items-start ">
           {recipeDetails.extendedIngredients
             ? recipeDetails.extendedIngredients.map((ingredient) => (
-                <li className="my-2 list-disc" key={ingredient.id}>
+                <li className="mx-3 my-4 list-disc" key={ingredient.id}>
                   {ingredient.nameClean}
                 </li>
               ))
@@ -21,7 +21,7 @@ function RecipeInfo({ recipeDetails }) {
       </div>
       <h3 className="text-center text-xl">Instructions</h3>
       <h4
-        className="my-4 text-justify xl:p-4"
+        className="my-4 text-justify xl:p-5"
         dangerouslySetInnerHTML={{ __html: recipeDetails.instructions }}
       ></h4>
     </div>
