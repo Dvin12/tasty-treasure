@@ -7,7 +7,7 @@ function Reviews({ reviews }) {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1024);
+      setIsMobile(window.innerWidth <= 1440);
     };
     handleResize();
 

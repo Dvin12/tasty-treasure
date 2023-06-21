@@ -1,22 +1,22 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import VegetarianCard from "./VegetarianCard";
+import DiscoverCard from "./DiscoverCard";
 import { Link } from "react-router-dom";
 
-function VegetarianSlide({ vegetarian }) {
+function DiscoverPicksLaptop({ discover }) {
   return (
     <div>
       <Splide
         options={{
-          perPage: 4,
-          padding: 20,
-          gap: 40,
+          perPage: 3,
+          padding: 10,
+          gap: -80,
           pagination: false,
         }}
       >
-        {vegetarian.map((item) => (
-          <SplideSlide key={item.id}>
+        {discover.map((item) => (
+          <SplideSlide>
             <Link to={"/recipe/" + item.id}>
-              <VegetarianCard vegetarianData={item}></VegetarianCard>
+              <DiscoverCard key={item.id} discover={item}></DiscoverCard>
             </Link>
           </SplideSlide>
         ))}
@@ -24,4 +24,5 @@ function VegetarianSlide({ vegetarian }) {
     </div>
   );
 }
-export default VegetarianSlide;
+
+export default DiscoverPicksLaptop;

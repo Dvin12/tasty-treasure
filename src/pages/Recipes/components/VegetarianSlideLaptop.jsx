@@ -2,14 +2,14 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import VegetarianCard from "./VegetarianCard";
 import { Link } from "react-router-dom";
 
-function VegetarianSlide({ vegetarian }) {
+function VegetarianSlideLaptop({ vegetarian }) {
   return (
     <div>
       <Splide
         options={{
-          perPage: 4,
-          padding: 20,
-          gap: 40,
+          perPage: 3,
+          padding: 10,
+          gap: -80,
           pagination: false,
         }}
       >
@@ -24,4 +24,5 @@ function VegetarianSlide({ vegetarian }) {
     </div>
   );
 }
-export default VegetarianSlide;
+
+export default VegetarianSlideLaptop;

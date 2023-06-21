@@ -38,7 +38,7 @@ function RecipeFunctionality({ recipeDetails }) {
       />
       <button
         onClick={handleNotification}
-        className="my-4 mt-12 rounded-xl bg-green-600 p-4 text-lg font-medium text-gray-100 duration-300 hover:bg-green-700 xl:my-8 xl:mt-0"
+        className="my-4 mt-12 rounded-xl bg-green-600 p-4 text-lg font-medium text-gray-100 duration-300 hover:bg-green-700 xl:my-8 xl:mt-8"
       >
         Save for later
       </button>

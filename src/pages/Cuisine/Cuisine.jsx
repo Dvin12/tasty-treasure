@@ -40,7 +40,7 @@ function Cuisine() {
           <Search></Search>
         </div>
         <Category></Category>
-        <div className="flex w-full flex-col items-center gap-10 py-28 md:grid md:grid-cols-2 md:px-8 xl:mx-60 xl:grid-cols-4 xl:justify-items-center xl:gap-10 xl:p-10 xl:px-0 xl:py-20 xl:pb-28 ">
+        <div className="flex w-full flex-col items-center gap-10 py-28 md:grid md:grid-cols-2 md:px-8 xl:grid-cols-4 xl:justify-items-center xl:gap-10 xl:p-10 xl:px-14 xl:py-20 xl:pb-28 2xl:px-60 ">
           {cuisine.map((item) => (
             <Link to={"/recipe/" + item.id}>
               <CuisneCard key={item.id} cuisine={item}></CuisneCard>

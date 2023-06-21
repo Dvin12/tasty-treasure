@@ -28,7 +28,7 @@ function SearchResult() {
         <Search></Search>
       </div>
       <Category></Category>
-      <div className="justify-items-center gap-10 py-20 md:grid md:grid-cols-2 xl:mx-60 xl:grid-cols-4 ">
+      <div className="justify-items-center gap-10 py-20 md:grid md:grid-cols-2 xl:mx-14 xl:grid-cols-4 2xl:mx-60 ">
         {searchResult.map((item) => (
           <Link to={"/recipe/" + item.id}>
             <SearchResultCard key={item.id} results={item}></SearchResultCard>

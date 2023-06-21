@@ -3,24 +3,24 @@ import { dish1, dish2 } from "../../../assets/img/img";
 
 function Header() {
   return (
-    <header className="h-screen bg-emerald-900 text-gray-100 ">
-      <section className="relative flex h-auto  flex-col items-center justify-center px-6 py-28 md:py-36 xl:mx-6  xl:grid xl:w-fit xl:grid-cols-2 xl:py-60 2xl:mx-60 2xl:py-72">
+    <header className=" h-screen bg-emerald-900 text-gray-100 ">
+      <section className="relative mx-4 flex  h-auto flex-col items-center justify-center py-28 md:py-40 xl:mx-6  xl:grid  xl:w-auto xl:grid-cols-2  xl:py-60 2xl:mx-60 2xl:py-72">
         <article className="flex  flex-col items-center justify-center xl:block">
-          <h1 className="text-center text-4xl font-medium md:w-[600px]  md:text-6xl xl:w-[530px] xl:py-0   xl:text-left xl:text-6xl ">
+          <h1 className="text-center text-4xl font-medium md:w-[600px]  md:text-6xl xl:w-[530px] xl:py-0   xl:text-left  ">
             The Easiest Way To Make Your Favourite Meal
           </h1>
-          <p className="my-14  text-justify font-medium text-gray-400 md:my-14 md:w-[540px] md:text-xl xl:my-10 xl:w-[620px] xl:text-left xl:text-lg 2xl:w-[660px]">
+          <p className="my-14  text-justify font-medium text-gray-400 md:my-14 md:w-[540px] xl:my-10 xl:w-[620px] xl:text-left xl:text-lg 2xl:w-[660px]">
             Explore a vast collection of over 1000 recipes at your fingertips.
             Discover the quickest and easiest ways to cook, saving you valuable
             time in the kitchen.
           </p>
           <Link to="recipes">
-            <button className="order-last rounded-lg bg-green-600 px-8 py-3 text-lg duration-300 hover:bg-green-700 md:px-14 md:py-5 md:text-xl xl:px-8 xl:py-3 xl:text-lg">
+            <button className=" rounded-lg bg-green-600 px-8 py-3 text-lg duration-300 hover:bg-green-700  md:text-xl xl:px-8 xl:py-3 xl:text-lg">
               Explore Recipes
             </button>
           </Link>
         </article>
-        <article className="   flex flex-col  items-center justify-center  xl:relative  xl:w-[800px]">
+        <article className="flex flex-col  items-center justify-center  xl:relative  xl:w-auto">
           <img
             src={dish1}
             alt="food"
