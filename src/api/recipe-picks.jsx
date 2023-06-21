@@ -1,5 +1,4 @@
 import axios from "axios";
-const apiKey = import.meta.env.VITE_API_KEY;
 
 /// VEGETARIAN FETCH //////////
 
@@ -10,7 +9,7 @@ export async function vegetarianData() {
     return JSON.parse(localStorageData);
   } else {
     const response = await axios.get(
-      `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=14&tags=vegetarian`
+      `https://api.spoonacular.com/recipes/random?apiKey=c035a78b9bc840dab01f2c6dc6c3d6a5&number=14&tags=vegetarian`
     );
 
     const vegetarian = response.data;
@@ -30,7 +29,7 @@ export async function discoverData() {
     return JSON.parse(localStorageData);
   } else {
     const response = await axios.get(
-      `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=16`
+      `https://api.spoonacular.com/recipes/random?apiKey=c035a78b9bc840dab01f2c6dc6c3d6a5&number=16`
     );
 
     const discover = response.data;

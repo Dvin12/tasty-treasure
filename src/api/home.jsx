@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiKey = import.meta.env.VITE_API_KEY;
+
 
 /////// TRENDING FETCH ///////////
 
@@ -10,7 +10,7 @@ export async function trendingData() {
     return JSON.parse(localStorageData);
   } else {
     const response = await axios.get(
-      `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`
+      `https://api.spoonacular.com/recipes/random?apiKey=c035a78b9bc840dab01f2c6dc6c3d6a5&number=6`
     );
 
     const trending = response.data;

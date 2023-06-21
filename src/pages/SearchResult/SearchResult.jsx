@@ -10,9 +10,7 @@ function SearchResult() {
 
   const getSearchResult = async (name) => {
     const data = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${
-        import.meta.env.VITE_API_KEY
-      }&query=${name}`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=c035a78b9bc840dab01f2c6dc6c3d6a5&query=${name}`
     );
     const recipes = await data.json();
     setSearchResult(recipes.results);
