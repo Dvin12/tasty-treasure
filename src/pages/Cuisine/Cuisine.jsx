@@ -18,13 +18,17 @@ function Cuisine() {
       );
       const recipes = await data.json();
       localStorage.setItem(`${name}Recipes`, JSON.stringify(recipes.results));
-      setCuisine(recipes);
+      setCuisine(recipes.results);
     }
   };
 
   useEffect(() => {
     getCuisine(params.type);
   }, [params.type]);
+
+  if (cuisine.length === 0) {
+    return <div className="pt-12 md:pt-20 xl:pt-40">Loading...</div>;
+  }
 
   return (
     <div className="bg-gray-200 ">
@@ -40,8 +44,8 @@ function Cuisine() {
         <Category></Category>
         <div className="flex w-full flex-col items-center gap-10 py-28 md:grid md:grid-cols-2 md:px-8 xl:grid-cols-4 xl:justify-items-center xl:gap-10 xl:p-10 xl:px-14 xl:py-20 xl:pb-28 2xl:px-60 ">
           {cuisine.map((item) => (
-            <Link to={"/recipe/" + item.id}>
-              <CuisneCard key={item.id} cuisine={item}></CuisneCard>
+            <Link to={"/recipe/" + item.id} key={item.id}>
+              <CuisneCard cuisine={item}></CuisneCard>
             </Link>
           ))}
         </div>

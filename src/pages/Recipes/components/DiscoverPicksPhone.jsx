@@ -8,10 +8,10 @@ function DiscoverPicksPhone({ discover }) {
       <Splide
         options={{
           perPage: 1,
-          padding: 1,
-          gap: 10,
+          padding: 4,
+          gap: 60,
           pagination: false,
-          arrows: false,
+          arrows: true,
           autoplay: true,
           pagination: false,
           interval: 4000,

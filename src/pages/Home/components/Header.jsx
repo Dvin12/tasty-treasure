@@ -4,7 +4,7 @@ import { dish1, dish2 } from "../../../assets/img/img";
 function Header() {
   return (
     <header className=" h-screen bg-emerald-900 text-gray-100 ">
-      <section className="relative mx-4 flex h-auto  flex-col items-center justify-center py-28 md:py-40  xl:mx-10  xl:grid  xl:w-auto xl:grid-cols-2  xl:py-60 2xl:mx-60 2xl:py-72">
+      <section className="relative mx-8 flex h-auto  flex-col items-center justify-center py-28 md:py-40  xl:mx-10  xl:grid  xl:w-auto xl:grid-cols-2  xl:py-60 2xl:mx-60 2xl:py-72">
         <article className="flex  flex-col items-center justify-center xl:block">
           <h1 className="text-center text-4xl font-medium md:w-[600px]  md:text-6xl xl:w-[530px] xl:py-0   xl:text-left  ">
             The Easiest Way To Make Your Favourite Meal

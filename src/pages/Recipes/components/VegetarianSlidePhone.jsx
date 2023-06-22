@@ -8,10 +8,10 @@ function VegetarianSlidePhone({ vegetarian }) {
       <Splide
         options={{
           perPage: 1,
-          padding: 0,
-          gap: 10,
+          padding: 4,
+          gap: 40,
           pagination: false,
-          arrows: false,
+          arrows: true,
           autoplay: true,
           pagination: false,
           interval: 4000,

@@ -3,7 +3,7 @@ import { FiMail, FiPhone } from "react-icons/fi";
 function ContactInfo() {
   return (
     <div>
-      <h4 className="text-center text-3xl xl:text-left">
+      <h4 className="px-4 text-center text-3xl xl:text-left">
         We would love to hear from you!{" "}
       </h4>
       <p className="my-5 p-4 text-justify xl:p-0 xl:text-left">
