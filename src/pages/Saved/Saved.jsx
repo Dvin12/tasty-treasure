@@ -7,7 +7,7 @@ function Saved() {
   const savedData = useSelector((state) => state.tasty.recipeDetails);
   const dispatch = useDispatch();
   return (
-    <section className="h-screen bg-gray-200">
+    <section className="h-full bg-gray-200">
       <div className="py-32 xl:mx-14 xl:py-44 2xl:mx-60 2xl:py-60">
         <div className=" flex flex-col items-center gap-6 xl:flex-row xl:justify-between">
           <h3 className=" text-2xl font-medium xl:text-4xl">Saved Recipes</h3>
